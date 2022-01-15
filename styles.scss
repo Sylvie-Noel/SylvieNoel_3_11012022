@@ -5,6 +5,10 @@ h1 {
 p{
     font-family: 'Roboto', sans-serif;
 }
+*
+{
+    box-sizing: border-box;
+}
 /**************************VARIABLES*****************************/
 /*COLORS*/
 $color-primary: #9356DC;
