@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
 h1 {
     font-family: 'Shrikhand', cursive;
 }
-
-/*VARIABLES*/
+p{
+    font-family: 'Roboto', sans-serif;
+}
+/**************************VARIABLES*****************************/
 /*COLORS*/
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$white: #fff;
+$black: #000;
+$grey: #f2f2f2;
 
 
