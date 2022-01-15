@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-
 h1 {
+
     font-family: 'Shrikhand', cursive;
 }
-
-p{
+p {
     font-family: 'Roboto', sans-serif;
 }
 *
 {
     box-sizing: border-box;
 }
-/****************************** VARIABLES *****************************/
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/****************************** VARIABLES*****************************/
 /*COLORS*/
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
@@ -26,3 +31,19 @@ $grey: #f2f2f2;
 
 
 /****************************** FONCTIONS ******************************/
+
+
+
+
+
+
+
+
+
+
+/****************************** FONCTIONS ******************************/
+.logo img
+{
+    width: 180px;
+    height: 30px;
+}
