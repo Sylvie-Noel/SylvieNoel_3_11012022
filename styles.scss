@@ -3,7 +3,7 @@ h1 {
 
     font-family: 'Shrikhand', cursive;
 }
-p, .btn__text {
+p, .btn__text, h2 {
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     display: flex;
@@ -62,6 +62,9 @@ $grey: #f2f2f2;
    height: 50px;
    background-color: gray;
 }
+/*.paris__text {
+
+}*/
 .titleh1 {
     flex-direction: column;
 }

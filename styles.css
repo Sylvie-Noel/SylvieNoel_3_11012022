@@ -3,7 +3,7 @@ h1 {
   font-family: 'Shrikhand', cursive;
 }
 
-p, .btn__text {
+p, .btn__text, h2 {
   font-family: 'Roboto', sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -58,6 +58,9 @@ html, body {
   background-color: gray;
 }
 
+/*.paris__text {
+
+}*/
 .titleh1 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
