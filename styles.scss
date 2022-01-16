@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-h1 {
-
+/*h2 { Seulement pour les menus
     font-family: 'Shrikhand', cursive;
-}
-p, .btn__text, h2 {
+}*/
+p, .btn__text, h1, h2 {
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     display: flex;
@@ -64,6 +63,9 @@ $grey: #f2f2f2;
 }
 .paris__text {
     height: 50px;
+}
+.titleh1-btn-container {
+    background-color: $grey;
 }
 .titleh1 {
     flex-direction: column;
