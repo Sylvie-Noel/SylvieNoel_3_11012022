@@ -3,8 +3,9 @@ h1 {
   font-family: 'Shrikhand', cursive;
 }
 
-p {
+p, .btn__text {
   font-family: 'Roboto', sans-serif;
+  display: inline-block;
 }
 
 * {
@@ -27,9 +28,27 @@ p {
 /****************************** VARIABLES*****************************/
 /*COLORS*/
 /****************************** FONCTIONS ******************************/
-/****************************** FONCTIONS ******************************/
+/****************************** SELECTEURS ******************************/
 .logo img {
   width: 180px;
   height: 30px;
+}
+
+.titleh1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/****************************** COMPOSANTS ******************************/
+.btn {
+  background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
+  height: 60px;
+  width: 220px;
+  margin-right: auto;
+  padding-right: 0;
+  color: #fff;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

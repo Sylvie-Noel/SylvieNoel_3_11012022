@@ -3,8 +3,9 @@ h1 {
 
     font-family: 'Shrikhand', cursive;
 }
-p {
+p, .btn__text {
     font-family: 'Roboto', sans-serif;
+    display: inline-block;
 }
 *
 {
@@ -41,9 +42,27 @@ $grey: #f2f2f2;
 
 
 
-/****************************** FONCTIONS ******************************/
+/****************************** SELECTEURS ******************************/
 .logo img
 {
     width: 180px;
     height: 30px;
+}
+
+.titleh1 {
+    flex-direction: column;
+}
+
+
+
+
+/****************************** COMPOSANTS ******************************/
+.btn {
+    background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary,);
+    height: 60px;
+    width: 220px;
+    margin-right: auto;
+    padding-right: 0;
+    color: $white;
+    border-radius: 30px;
 }
