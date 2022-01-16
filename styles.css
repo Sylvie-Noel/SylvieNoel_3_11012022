@@ -1,10 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
-h1 {
-  font-family: 'Shrikhand', cursive;
-}
-
-p {
+/*h2 { Seulement pour les menus
+    font-family: 'Shrikhand', cursive;
+}*/
+p, .btn__text, h1, h2 {
   font-family: 'Roboto', sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  text-align: center;
 }
 
 * {
@@ -24,12 +35,50 @@ p {
           align-items: center;
 }
 
+html, body {
+  margin: 0;
+}
+
 /****************************** VARIABLES*****************************/
 /*COLORS*/
 /****************************** FONCTIONS ******************************/
-/****************************** FONCTIONS ******************************/
+/****************************** SELECTEURS ******************************/
+.logo {
+  height: 70px;
+}
+
 .logo img {
   width: 180px;
   height: 30px;
+}
+
+.paris {
+  background-color: gray;
+}
+
+.paris__text {
+  height: 50px;
+}
+
+.titleh1-btn-container {
+  background-color: #f2f2f2;
+}
+
+.titleh1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/****************************** COMPOSANTS ******************************/
+.btn {
+  background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
+  height: 60px;
+  width: 220px;
+  margin-right: 0;
+  padding-right: 0;
+  color: #fff;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
