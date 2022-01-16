@@ -59,12 +59,12 @@ $grey: #f2f2f2;
     height: 30px;
 }
 .paris {
-   height: 50px;
+   
    background-color: gray;
 }
-/*.paris__text {
-
-}*/
+.paris__text {
+    height: 50px;
+}
 .titleh1 {
     flex-direction: column;
 }
