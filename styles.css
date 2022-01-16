@@ -5,7 +5,18 @@ h1 {
 
 p, .btn__text {
   font-family: 'Roboto', sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: inline-block;
+  text-align: center;
 }
 
 * {
@@ -25,6 +36,10 @@ p, .btn__text {
           align-items: center;
 }
 
+html {
+  margin: 0;
+}
+
 /****************************** VARIABLES*****************************/
 /*COLORS*/
 /****************************** FONCTIONS ******************************/
@@ -32,6 +47,19 @@ p, .btn__text {
 .logo img {
   width: 180px;
   height: 30px;
+}
+
+.paris {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .titleh1 {
@@ -46,7 +74,7 @@ p, .btn__text {
   background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
   height: 60px;
   width: 220px;
-  margin-right: auto;
+  margin-right: 0;
   padding-right: 0;
   color: #fff;
   border-radius: 30px;

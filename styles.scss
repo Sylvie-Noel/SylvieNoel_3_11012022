@@ -5,7 +5,11 @@ h1 {
 }
 p, .btn__text {
     font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
     display: inline-block;
+    text-align: center;
 }
 *
 {
@@ -16,6 +20,9 @@ p, .btn__text {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+html {
+    margin: 0;
 }
 /****************************** VARIABLES*****************************/
 /*COLORS*/
@@ -48,7 +55,11 @@ $grey: #f2f2f2;
     width: 180px;
     height: 30px;
 }
-
+.paris {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
 .titleh1 {
     flex-direction: column;
 }
@@ -58,11 +69,11 @@ $grey: #f2f2f2;
 
 /****************************** COMPOSANTS ******************************/
 .btn {
-    background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary,);
+    background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary);
     height: 60px;
     width: 220px;
-    margin-right: auto;
+    margin-right: 0;
     padding-right: 0;
     color: $white;
-    border-radius: 30px;
+    border-radius: 30px;   
 }
