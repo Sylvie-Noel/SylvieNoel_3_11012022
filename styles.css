@@ -36,7 +36,7 @@ p, .btn__text {
           align-items: center;
 }
 
-html {
+html, body {
   margin: 0;
 }
 
@@ -44,22 +44,18 @@ html {
 /*COLORS*/
 /****************************** FONCTIONS ******************************/
 /****************************** SELECTEURS ******************************/
+.logo {
+  height: 70px;
+}
+
 .logo img {
   width: 180px;
   height: 30px;
 }
 
 .paris {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 50px;
+  background-color: gray;
 }
 
 .titleh1 {
