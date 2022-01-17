@@ -4,18 +4,7 @@
 }*/
 p, .btn__text, h1, h2 {
   font-family: 'Roboto', sans-serif;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: inline-block;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 * {
@@ -33,6 +22,19 @@ p, .btn__text, h1, h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html, body {
@@ -71,17 +73,8 @@ html, body {
           flex-direction: column;
 }
 
-.function-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.function-section {
+  padding: 0 20px;
 }
 
 .function-cards__first {
@@ -98,6 +91,44 @@ html, body {
   background-color: #f2f2f2;
   height: 80px;
   width: 100%;
+  border-radius: 20px;
+}
+
+.number-icon {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: blue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: -10px;
+}
+
+.number {
+  height: 20px;
+  width: 20px;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.phone {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: chartreuse;
+}
+
+.choice {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: cadetblue;
 }
 
 /****************************** COMPOSANTS ******************************/
@@ -109,5 +140,9 @@ html, body {
   padding-right: 0;
   color: #fff;
   border-radius: 30px;
+}
+
+.btn__text {
+  display: inline-block;
 }
 /*# sourceMappingURL=styles.css.map */

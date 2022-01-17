@@ -4,11 +4,8 @@
 }*/
 p, .btn__text, h1, h2 {
     font-family: 'Roboto', sans-serif;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    display: inline-block;
-    text-align: center;
+   
+    /*text-align: center;*/
 }
 *
 {
@@ -19,6 +16,11 @@ p, .btn__text, h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 html, body {
     margin: 0;
@@ -70,10 +72,9 @@ $grey: #f2f2f2;
 .titleh1 {
     flex-direction: column;
 }
-.function-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+ 
+.function-section {
+    padding: 0 20px;
 }
 .function-cards__first {
     display: flex;
@@ -82,9 +83,33 @@ $grey: #f2f2f2;
     background-color: $grey;
     height: 80px;
     width: 100%;
+    border-radius: 20px;
+} 
 
+.number-icon {
+    width: 
+    10%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: blue;
+    flex: 1;
+    margin-left: -10px;
 }
-
+.number {
+    height: 20px;
+    width: 20px;
+    background-color: $color-primary;
+    color: $white;
+    border-radius: 30px;
+}
+.phone {
+    flex: 1;
+    background-color: chartreuse;
+}
+.choice {
+    flex: 2;
+    background-color: cadetblue;
+}
 
 /****************************** COMPOSANTS ******************************/
 .btn {
@@ -94,5 +119,8 @@ $grey: #f2f2f2;
     margin-right: 0;
     padding-right: 0;
     color: $white;
-    border-radius: 30px;   
+    border-radius: 30px;
+    &__text{
+        display: inline-block;
+    }   
 }
