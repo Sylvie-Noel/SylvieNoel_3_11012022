@@ -2,7 +2,7 @@
 /*h2 { Seulement pour les menus
     font-family: 'Shrikhand', cursive;
 }*/
-p, .btn__text, h1, h2 {
+p, .btn__text, h1, h2, .number {
   font-family: 'Roboto', sans-serif;
   /*text-align: center;*/
 }
@@ -64,6 +64,7 @@ html, body {
 
 .titleh1-btn-container {
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 .titleh1 {
@@ -95,18 +96,19 @@ html, body {
 }
 
 .number-icon {
-  width: 10%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: blue;
+  /*background-color: blue;*/
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-left: -10px;
+  border-radius: 20px 0 0 20px;
 }
 
 .number {
@@ -121,23 +123,21 @@ html, body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: chartreuse;
+  width: 100%;
+  /* background-color: chartreuse;*/
 }
 
 .choice {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  background-color: cadetblue;
+  width: 75%;
+  /* background-color: cadetblue;*/
 }
 
 /****************************** COMPOSANTS ******************************/
 .btn {
   background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
-  height: 60px;
+  height: 50px;
   width: 220px;
-  margin-right: 0;
-  padding-right: 0;
+  margin: 20px 0 50px 0;
   color: #fff;
   border-radius: 30px;
 }

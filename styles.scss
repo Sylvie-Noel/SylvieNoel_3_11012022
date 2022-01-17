@@ -2,7 +2,7 @@
 /*h2 { Seulement pour les menus
     font-family: 'Shrikhand', cursive;
 }*/
-p, .btn__text, h1, h2 {
+p, .btn__text, h1, h2, .number {
     font-family: 'Roboto', sans-serif;
    
     /*text-align: center;*/
@@ -68,6 +68,7 @@ $grey: #f2f2f2;
 }
 .titleh1-btn-container {
     background-color: $grey;
+    text-align: center;
 }
 .titleh1 {
     flex-direction: column;
@@ -87,13 +88,13 @@ $grey: #f2f2f2;
 } 
 
 .number-icon {
-    width: 
-    10%;
+    width: 25%;
     display: flex;
     justify-content: flex-start;
-    background-color: blue;
+    /*background-color: blue;*/
     flex: 1;
     margin-left: -10px;
+    border-radius: 20px 0 0 20px;
 }
 .number {
     height: 20px;
@@ -104,20 +105,20 @@ $grey: #f2f2f2;
 }
 .phone {
     flex: 1;
-    background-color: chartreuse;
+    width: 100%;
+   /* background-color: chartreuse;*/
 }
 .choice {
-    flex: 2;
-    background-color: cadetblue;
+    width: 75%;
+   /* background-color: cadetblue;*/
 }
 
 /****************************** COMPOSANTS ******************************/
 .btn {
     background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary);
-    height: 60px;
+    height: 50px;
     width: 220px;
-    margin-right: 0;
-    padding-right: 0;
+    margin: 20px 0 50px 0;
     color: $white;
     border-radius: 30px;
     &__text{
