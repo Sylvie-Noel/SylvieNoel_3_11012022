@@ -2,13 +2,10 @@
 /*h2 { Seulement pour les menus
     font-family: 'Shrikhand', cursive;
 }*/
-p, .btn__text, h1, h2 {
+p, .btn__text, h1, h2, .number {
     font-family: 'Roboto', sans-serif;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    display: inline-block;
-    text-align: center;
+   
+    /*text-align: center;*/
 }
 *
 {
@@ -19,6 +16,11 @@ p, .btn__text, h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
 }
 html, body {
     margin: 0;
@@ -66,21 +68,60 @@ $grey: #f2f2f2;
 }
 .titleh1-btn-container {
     background-color: $grey;
+    text-align: center;
 }
 .titleh1 {
     flex-direction: column;
 }
+ 
+.function-section {
+    padding: 0 20px;
+}
+.function-cards__first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $grey;
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+} 
 
-
-
+.number-icon {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    /*background-color: blue;*/
+    flex: 1;
+    margin-left: -10px;
+    border-radius: 20px 0 0 20px;
+}
+.number {
+    height: 20px;
+    width: 20px;
+    background-color: $color-primary;
+    color: $white;
+    border-radius: 30px;
+}
+.phone {
+    flex: 1;
+    width: 100%;
+   /* background-color: chartreuse;*/
+}
+.choice {
+    width: 75%;
+   /* background-color: cadetblue;*/
+}
 
 /****************************** COMPOSANTS ******************************/
 .btn {
     background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary);
-    height: 60px;
+    height: 50px;
     width: 220px;
-    margin-right: 0;
-    padding-right: 0;
+    margin: 20px 0 50px 0;
     color: $white;
-    border-radius: 30px;   
+    border-radius: 30px;
+    &__text{
+        display: inline-block;
+    }   
 }
