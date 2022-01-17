@@ -71,6 +71,35 @@ html, body {
           flex-direction: column;
 }
 
+.function-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.function-cards__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  height: 80px;
+  width: 100%;
+}
+
 /****************************** COMPOSANTS ******************************/
 .btn {
   background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
