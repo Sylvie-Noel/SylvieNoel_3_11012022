@@ -133,6 +133,27 @@ html, body {
   /* background-color: cadetblue;*/
 }
 
+.card {
+  height: 250px;
+  min-width: 40%;
+  max-width: 40%;
+  position: relative;
+}
+
+.card__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 160px;
+  width: 100%;
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 /****************************** COMPOSANTS ******************************/
 .btn {
   background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
