@@ -2,7 +2,7 @@
 /*h2 { Seulement pour les menus
     font-family: 'Shrikhand', cursive;
 }*/
-p, .btn__text, h1, h2, .number {
+p, .paris__text, .btn__text, h1, h2, h3, .number, span {
   font-family: 'Roboto', sans-serif;
   /*text-align: center;*/
 }
@@ -55,11 +55,12 @@ html, body {
 }
 
 .paris {
-  background-color: gray;
+  background-color: #e5e5e5;
 }
 
 .paris__text {
   height: 50px;
+  margin-left: 15px;
 }
 
 .titleh1-btn-container {
@@ -131,6 +132,69 @@ html, body {
 .choice {
   width: 75%;
   /* background-color: cadetblue;*/
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.card {
+  height: 290px;
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 190px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px;
+}
+
+.card-text__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-text__text h3 {
+  margin: 0;
+}
+
+.card-text__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #1b6150;
+  background-color: #99E2D0;
 }
 
 /****************************** COMPOSANTS ******************************/
