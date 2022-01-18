@@ -2,7 +2,7 @@
 /*h2 { Seulement pour les menus
     font-family: 'Shrikhand', cursive;
 }*/
-p, .btn__text, h1, h2, h3, .number, span {
+p, .paris__text, .btn__text, h1, h2, h3, .number, span {
     font-family: 'Roboto', sans-serif;
    
     /*text-align: center;*/
@@ -61,10 +61,11 @@ $grey: #f2f2f2;
 }
 .paris {
    
-   background-color: gray;
+   background-color: darken($grey, 5%);
 }
 .paris__text {
     height: 50px;
+    margin-left: 15px;
 }
 .titleh1-btn-container {
     background-color: $grey;
