@@ -157,6 +157,36 @@ html, body {
   border-radius: 20px 20px 0 0;
 }
 
+.card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px;
+}
+
+.card-text__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-text__text h3 {
+  margin: 0;
+}
+
+.card-text__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 span {
   position: absolute;
   right: 20px;
