@@ -147,6 +147,7 @@ html, body {
   position: relative;
   background-color: #fff;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .card__image img {
