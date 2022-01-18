@@ -80,7 +80,7 @@ $grey: #f2f2f2;
 }
  
 .function-section {
-    padding: 0 20px;
+    padding: 40px 20px 64px 20px;
 }
 .function-cards__first {
     display: flex;
@@ -90,7 +90,7 @@ $grey: #f2f2f2;
     height: 80px;
     width: 100%;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
 } 
 
 .number-icon {
@@ -116,12 +116,12 @@ $grey: #f2f2f2;
 }
 .choice {
     width: 75%;
+    font-weight: bold;
    /* background-color: cadetblue;*/
 }
 .restaurants {
     background-color: $grey;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 40px 20px 64px 20px;
 }
 .card {
     height: 290px;
@@ -130,7 +130,7 @@ $grey: #f2f2f2;
     position: relative;
     background-color: $white;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .card__image img {
     object-fit: cover;
