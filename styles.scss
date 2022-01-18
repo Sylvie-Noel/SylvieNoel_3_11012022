@@ -143,11 +143,12 @@ $grey: #f2f2f2;
     display: flex;
     justify-content: space-between;
     padding: 18px;
+    &__text {
+        
+        flex-direction: column;
+    }
 }
-.card-text__text {
-    display: flex;
-    flex-direction: column;
-}
+
 .card-text__text h3 {
     margin: 0;
 }
