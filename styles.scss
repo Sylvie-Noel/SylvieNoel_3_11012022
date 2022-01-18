@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-/*h2 { Seulement pour les menus
+h4 { /*Seulement pour les menus*/
     font-family: 'Shrikhand', cursive;
-}*/
-p, .paris__text, .btn__text, h1, h2, h3, .number, span {
+}
+p, .paris__text, .btn__text, h1, h2, h3, .number, span, a {
     font-family: 'Roboto', sans-serif;
    
     /*text-align: center;*/
@@ -24,6 +24,10 @@ p, .paris__text, .btn__text, h1, h2, h3, .number, span {
 }
 html, body {
     margin: 0;
+}
+p{
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 /****************************** VARIABLES*****************************/
 /*COLORS*/
@@ -139,11 +143,12 @@ $grey: #f2f2f2;
     display: flex;
     justify-content: space-between;
     padding: 18px;
+    &__text {
+        
+        flex-direction: column;
+    }
 }
-.card-text__text {
-    display: flex;
-    flex-direction: column;
-}
+
 .card-text__text h3 {
     margin: 0;
 }
@@ -152,10 +157,38 @@ $grey: #f2f2f2;
 }
 span {
     position: absolute;
+    height: 32px;
+    width: 90px;
     right: 20px;
     top: 20px;
-    color: darken($color-tertiary,50%);
+    color: darken($color-tertiary,40%);
     background-color: $color-tertiary;
+    font-weight: bold;
+    border-radius: 2px;
+}
+footer
+{
+    background-color: lighten($black, 20%) ;
+    color: $white;
+    padding: 20px;
+}
+footer p {
+    display: inline-block;
+
+}
+footer i {
+    margin-right: 15px;
+}
+.fa-hands-helping {
+    font-size: 13px;
+    margin-right: 13px;
+}
+a {
+    text-decoration: none;
+    color: $white;
+}
+address {
+    font-style: normal;
 }
 /****************************** COMPOSANTS ******************************/
 .btn {
