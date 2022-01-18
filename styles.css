@@ -2,7 +2,7 @@
 /*h2 { Seulement pour les menus
     font-family: 'Shrikhand', cursive;
 }*/
-p, .btn__text, h1, h2, .number {
+p, .btn__text, h1, h2, h3, .number, span {
   font-family: 'Roboto', sans-serif;
   /*text-align: center;*/
 }
@@ -133,25 +133,36 @@ html, body {
   /* background-color: cadetblue;*/
 }
 
+.restaurants {
+  background-color: #f2f2f2;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .card {
-  height: 250px;
-  min-width: 40%;
-  max-width: 40%;
+  height: 290px;
+  min-width: 100%;
+  max-width: 100%;
   position: relative;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .card__image img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 160px;
+  height: 190px;
   width: 100%;
   overflow: hidden;
+  border-radius: 20px 20px 0 0;
 }
 
 span {
   position: absolute;
   right: 20px;
   top: 20px;
+  color: #1b6150;
+  background-color: #99E2D0;
 }
 
 /****************************** COMPOSANTS ******************************/
