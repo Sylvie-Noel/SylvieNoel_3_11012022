@@ -156,10 +156,14 @@ $grey: #f2f2f2;
 }
 span {
     position: absolute;
+    height: 32px;
+    width: 90px;
     right: 20px;
     top: 20px;
-    color: darken($color-tertiary,50%);
+    color: darken($color-tertiary,40%);
     background-color: $color-tertiary;
+    font-weight: bold;
+    border-radius: 2px;
 }
 footer
 {
@@ -178,7 +182,7 @@ footer i {
     font-size: 13px;
     margin-right: 13px;
 }
-a, {
+a {
     text-decoration: none;
     color: $white;
 }

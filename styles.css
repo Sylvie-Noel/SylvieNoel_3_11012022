@@ -198,10 +198,14 @@ p {
 
 span {
   position: absolute;
+  height: 32px;
+  width: 90px;
   right: 20px;
   top: 20px;
-  color: #1b6150;
+  color: #278870;
   background-color: #99E2D0;
+  font-weight: bold;
+  border-radius: 2px;
 }
 
 footer {
