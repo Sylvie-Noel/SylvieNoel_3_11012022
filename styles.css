@@ -228,6 +228,10 @@ a {
   color: #fff;
 }
 
+address {
+  font-style: normal;
+}
+
 /****************************** COMPOSANTS ******************************/
 .btn {
   background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);

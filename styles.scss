@@ -178,9 +178,12 @@ footer i {
     font-size: 13px;
     margin-right: 13px;
 }
-a {
+a, {
     text-decoration: none;
     color: $white;
+}
+address {
+    font-style: normal;
 }
 /****************************** COMPOSANTS ******************************/
 .btn {
