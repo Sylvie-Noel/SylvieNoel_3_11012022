@@ -56,6 +56,9 @@ $grey: #f2f2f2;
 
 
 /****************************** SELECTEURS ******************************/
+header {
+    box-shadow: 0 4px 32px 0 darken($black, 80%);
+}
 .logo{
     height: 70px;
 }
@@ -155,7 +158,13 @@ $grey: #f2f2f2;
         flex-direction: column;
     }
 }
-
+ /*p, h3 { à déclencher uniquement pendant l'animation
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+    
+}*/
 .card-text__text h3 {
     margin: 0;
 }
@@ -205,6 +214,7 @@ address {
     margin: 20px 0 50px 0;
     color: $white;
     border-radius: 30px;
+    box-shadow: 0 4px 8px 4px darken($grey, 10%);
     &__text{
         display: inline-block;
     }   
@@ -234,21 +244,27 @@ address {
     min-width: 100%;
     max-width: 100%;
     border-radius: 45px 45px 0 0;
-    padding: 15px 20px 0 20px;
+    padding: 15px 35px 0 20px;
 }
-
+.menu h1 {
+    margin-bottom: 0;
+}
 .flex-between {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     
 }
 .card-text-mini {
     border-radius: 20px;
     height: 85px;
     margin-top: 20px;
+    box-shadow: 0 4px 4px 0 darken($grey, 10%);
     &__price {
         display: flex;
         align-items: flex-end;
     }
+}
+.global-padding-menu {
+    padding: 20px 17px 0 ;
 }

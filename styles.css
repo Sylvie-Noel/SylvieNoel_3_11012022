@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 h4, .menu_h1 h1 {
   /*Seulement pour les menus*/
@@ -53,6 +54,11 @@ p {
 /*COLORS*/
 /****************************** FONCTIONS ******************************/
 /****************************** SELECTEURS ******************************/
+header {
+  -webkit-box-shadow: 0 4px 32px 0 black;
+          box-shadow: 0 4px 32px 0 black;
+}
+
 .logo {
   height: 70px;
 }
@@ -190,6 +196,13 @@ p {
           flex-direction: column;
 }
 
+/*p, h3 { à déclencher uniquement pendant l'animation
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+    
+}*/
 .card-text__text h3 {
   margin: 0;
 }
@@ -248,6 +261,8 @@ address {
   margin: 20px 0 50px 0;
   color: #fff;
   border-radius: 30px;
+  -webkit-box-shadow: 0 4px 8px 4px #d9d9d9;
+          box-shadow: 0 4px 8px 4px #d9d9d9;
 }
 
 .btn__text {
@@ -284,7 +299,11 @@ address {
   min-width: 100%;
   max-width: 100%;
   border-radius: 45px 45px 0 0;
-  padding: 15px 20px 0 20px;
+  padding: 15px 35px 0 20px;
+}
+
+.menu h1 {
+  margin-bottom: 0;
 }
 
 .flex-between {
@@ -294,15 +313,17 @@ address {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .card-text-mini {
   border-radius: 20px;
   height: 85px;
   margin-top: 20px;
+  -webkit-box-shadow: 0 4px 4px 0 #d9d9d9;
+          box-shadow: 0 4px 4px 0 #d9d9d9;
 }
 
 .card-text-mini__price {
@@ -312,5 +333,9 @@ address {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.global-padding-menu {
+  padding: 20px 17px 0;
 }
 /*# sourceMappingURL=styles.css.map */
