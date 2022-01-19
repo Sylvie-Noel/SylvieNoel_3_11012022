@@ -162,6 +162,8 @@ header {
   background-color: #fff;
   border-radius: 20px;
   margin-top: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 #d9d9d9;
+          box-shadow: 0 4px 8px 0 #d9d9d9;
 }
 
 .card__image img {

@@ -135,6 +135,7 @@ header {
     background-color: $white;
     border-radius: 20px;
     margin-top: 20px;
+    box-shadow: 0 4px 8px 0 darken($grey, 10%);
 }
 .card__image img {
     object-fit: cover;
