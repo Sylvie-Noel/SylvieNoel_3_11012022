@@ -86,7 +86,7 @@ p {
   padding: 40px 20px 64px 20px;
 }
 
-.function-cards__first {
+.function-cards__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
