@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-h4 { /*Seulement pour les menus*/
+h4, .menu_h1 h1{ /*Seulement pour les menus*/
     font-family: 'Shrikhand', cursive;
 }
+/*TYPOGRAPHY POUR L'INDEX*/
 p, .paris__text, .btn__text, h1, h2, h3, .number, span, a {
     font-family: 'Roboto', sans-serif;
    
@@ -138,11 +139,17 @@ $grey: #f2f2f2;
     width: 100%;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
+    &__menu img{
+        border-radius: 0%;
+    }
 }
-.card-text {
+
+.card-text, .card-text-mini {
     display: flex;
     justify-content: space-between;
     padding: 18px;
+    background-color: $white;
+    border-radius: 0 0 20px 20px;
     &__text {
         
         flex-direction: column;
@@ -201,4 +208,42 @@ address {
     &__text{
         display: inline-block;
     }   
+}
+/****************************** MENUS ******************************/
+
+.omf-banner {
+   position: relative;
+    background-color: $grey;
+}
+.omf-banner__image img {
+    object-fit: cover;
+    height:300px ;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 -15px -15px;
+}
+.menu {
+    background-color: $grey;
+    margin: -61px 0 0 0;
+    position: absolute;
+    display: flex;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 45px 45px 0 0;
+    padding: 15px 20px 0 20px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card-text-mini {
+    border-radius: 20px;
+    height: 85px;
+    &__price {
+        display: flex;
+        align-items: flex-end;
+    }
 }
