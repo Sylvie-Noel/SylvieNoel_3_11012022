@@ -208,6 +208,10 @@ address {
     &__text{
         display: inline-block;
     }   
+    &--small {
+        width: 180px;
+        margin: 42px 0 56px 0;
+    }
 }
 /****************************** MENUS ******************************/
 
@@ -242,6 +246,7 @@ address {
 .card-text-mini {
     border-radius: 20px;
     height: 85px;
+    margin-top: 20px;
     &__price {
         display: flex;
         align-items: flex-end;

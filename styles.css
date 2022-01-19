@@ -254,6 +254,11 @@ address {
   display: inline-block;
 }
 
+.btn--small {
+  width: 180px;
+  margin: 42px 0 56px 0;
+}
+
 /****************************** MENUS ******************************/
 .omf-banner {
   position: relative;
@@ -297,6 +302,7 @@ address {
 .card-text-mini {
   border-radius: 20px;
   height: 85px;
+  margin-top: 20px;
 }
 
 .card-text-mini__price {
