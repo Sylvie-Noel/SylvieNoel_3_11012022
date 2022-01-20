@@ -57,7 +57,7 @@ $grey: #f2f2f2;
 
 /****************************** SELECTEURS ******************************/
 header {
-    box-shadow: 0 4px 32px 0 darken($black, 80%);
+   
 }
 .logo{
     height: 70px;
@@ -68,8 +68,8 @@ header {
     height: 30px;
 }
 .paris {
-   
-   background-color: darken($grey, 5%);
+    box-shadow: inset 0 5px 5px -3px grey;
+    background-color: darken($grey, 5%);
 }
 .paris__text {
     height: 50px;
