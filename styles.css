@@ -85,19 +85,33 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     min-width: 100%;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1637px) {
+  .function-section {
+    padding: 64px 20px;
+    margin-bottom: 0%;
   }
 }
 
 .function-cards {
+  min-width: 100%;
+  max-width: 100%;
   /* background-color: blue;*/
 }
 @media screen and (min-width: 462px) {
   .function-cards {
-    min-width: 89%;
-    max-width: 89%;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 20px;
+  }
+}
+@media screen and (min-width: 1634px) {
+  .function-cards {
+    min-width: 89%;
+    max-width: 89%;
+    align-items: center;
   }
 }
 
@@ -112,6 +126,11 @@ p {
   margin-top: 25px;
   min-width: 300px;
   max-width: 422px;
+}
+@media screen and (min-width: 1346px) {
+  .function-cards__card {
+    margin-top: 0;
+  }
 }
 
 .number-icon {
@@ -253,6 +272,10 @@ address {
   color: #fff;
   border-radius: 30px;
   box-shadow: 0 4px 8px 4px #d9d9d9;
+}
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px 16px 8px #bfbfbf;
 }
 .btn__text {
   display: inline-block;
