@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-h4 { /*Seulement pour les menus*/
+h4, .menu_h1 h1{ /*Seulement pour les menus*/
     font-family: 'Shrikhand', cursive;
 }
+/*TYPOGRAPHY POUR L'INDEX*/
 p, .paris__text, .btn__text, h1, h2, h3, .number, span, a {
     font-family: 'Roboto', sans-serif;
    
@@ -29,6 +30,10 @@ p{
     margin-top: 8px;
     margin-bottom: 8px;
 }
+.shrikhand {
+    color: blue;
+}
+
 /****************************** VARIABLES*****************************/
 /*COLORS*/
 $color-primary: #9356DC;
@@ -38,9 +43,11 @@ $white: #fff;
 $black: #000;
 $grey: #f2f2f2;
 
+/*FONT-SIZE*/
+$font-size:(title1: 21px, title2: 19px, title3: 17px);
 
-
-
+/*BREAKPOINTS*/
+$breakpoints:('tablette': 462px);
 
 
 /****************************** FONCTIONS ******************************/
@@ -64,8 +71,8 @@ $grey: #f2f2f2;
     height: 30px;
 }
 .paris {
-   
-   background-color: darken($grey, 5%);
+    box-shadow: inset 0 5px 4px -3px darken($grey, 20%);
+    background-color: darken($grey, 4%);
 }
 .paris__text {
     height: 50px;
@@ -81,8 +88,38 @@ $grey: #f2f2f2;
  
 .function-section {
     padding: 40px 20px 64px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    @media screen and (min-width: 462px){
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-width: 100%;
+        align-items: center;
+    }
+    @media screen and (min-width: 1637px){
+        padding: 64px 20px;
+        margin-bottom: 0%;
+    }
 }
-.function-cards__first {
+.function-cards {
+    min-width: 100%;
+    max-width: 100%;
+   /* background-color: blue;*/
+    @media screen and (min-width: 462px){
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    @media screen and (min-width: 1634px) {
+        min-width: 89%;
+        max-width: 89%;
+        align-items: center;
+    }
+}
+
+.function-cards__card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -91,6 +128,11 @@ $grey: #f2f2f2;
     width: 100%;
     border-radius: 20px;
     margin-top: 25px;
+    min-width: 300px;
+    max-width: 422px;
+    @media screen and (min-width: 1346px) {
+        margin-top: 0;
+    }
 } 
 
 .number-icon {
@@ -123,6 +165,9 @@ $grey: #f2f2f2;
     background-color: $grey;
     padding: 40px 20px 64px 20px;
 }
+a {
+    color: $black;
+}
 .card {
     height: 290px;
     min-width: 100%;
@@ -131,6 +176,7 @@ $grey: #f2f2f2;
     background-color: $white;
     border-radius: 20px;
     margin-top: 20px;
+    box-shadow: 0 4px 8px 0 darken($grey, 10%);
 }
 .card__image img {
     object-fit: cover;
@@ -138,17 +184,29 @@ $grey: #f2f2f2;
     width: 100%;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
+    &__menu img{
+        border-radius: 0%;
+    }
 }
-.card-text {
+
+.card-text, .card-text-mini {
     display: flex;
     justify-content: space-between;
     padding: 18px;
+    background-color: $white;
+    border-radius: 0 0 20px 20px;
     &__text {
         
         flex-direction: column;
     }
 }
-
+ /*p, h3 { à déclencher uniquement pendant l'animation
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+    
+}*/
 .card-text__text h3 {
     margin: 0;
 }
@@ -185,6 +243,9 @@ footer i {
 }
 a {
     text-decoration: none;
+    
+}
+.color-white {
     color: $white;
 }
 address {
@@ -198,7 +259,68 @@ address {
     margin: 20px 0 50px 0;
     color: $white;
     border-radius: 30px;
+    box-shadow: 0 4px 8px 4px darken($grey, 10%);
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0 8px 16px 8px darken($grey , 20%);
+    }
     &__text{
         display: inline-block;
     }   
+    &--small {
+        width: 180px;
+        margin: 42px 0 56px 0;
+    }
+}
+/****************************** MENUS ******************************/
+
+.omf-banner {
+   position: relative;
+    background-color: $grey;
+}
+.omf-banner__image img {
+    object-fit: cover;
+    height:300px ;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 -15px -15px;
+}
+.menu {
+    background-color: $grey;
+    margin: -61px 0 0 0;
+    position: absolute;
+    display: flex;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 45px 45px 0 0;
+    padding: 15px 35px 0 20px;
+}
+.menu h1 {
+    margin-bottom: 0;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.card-text-mini {
+    border-radius: 20px;
+    height: 85px;
+    margin-top: 20px;
+    box-shadow: 0 4px 4px 0 darken($grey, 10%);
+    &__price {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+.global-padding-menu {
+    padding: 20px 17px 0 ;
+}
+
+/****************************** MEDIA QUERIES ******************************/
+@mixin tablette{
+    @media screen and (min-width: map-get($breakpoints, tablette)){
+        @content;
+    }
 }
