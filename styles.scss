@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-h4, .menu_h1 h1{ /*Seulement pour les menus*/
+h4, .menu_h1{ /*Seulement pour les menus*/
     font-family: 'Shrikhand', cursive;
 }
 /*TYPOGRAPHY POUR L'INDEX*/
@@ -30,9 +30,7 @@ p{
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.shrikhand {
-    color: blue;
-}
+
 
 /****************************** VARIABLES*****************************/
 /*COLORS*/
@@ -62,8 +60,20 @@ $breakpoints:('tablette': 462px);
 
 
 /****************************** SELECTEURS ******************************/
-.logo{
+header {
     height: 70px;
+    position:relative;
+}
+.arrow
+{
+   display: flex;
+   flex: .94;
+   font-size: map-get($font-size, title2);
+}
+.logo {
+    position: absolute;
+    display: flex;
+    flex: .95;
 }
 .logo img
 {
@@ -243,7 +253,7 @@ footer i {
 }
 a {
     text-decoration: none;
-    
+    display: contents;
 }
 .color-white {
     color: $white;
