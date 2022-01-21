@@ -89,7 +89,7 @@ p {
 }
 
 .function-cards {
-  /*background-color: blue;*/
+  background-color: blue;
 }
 @media screen and (min-width: 462px) {
   .function-cards {
@@ -118,7 +118,7 @@ p {
   width: 25%;
   display: flex;
   justify-content: flex-start;
-  /*background-color: blue;*/
+  background-color: blue;
   flex: 1;
   margin-left: -10px;
   border-radius: 20px 0 0 20px;
@@ -147,6 +147,10 @@ p {
 .restaurants {
   background-color: #f2f2f2;
   padding: 40px 20px 64px 20px;
+}
+
+a {
+  color: #000;
 }
 
 .card {
@@ -230,6 +234,9 @@ footer i {
 
 a {
   text-decoration: none;
+}
+
+.color-white {
   color: #fff;
 }
 

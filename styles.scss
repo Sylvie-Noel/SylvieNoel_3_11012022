@@ -33,6 +33,7 @@ p{
 .shrikhand {
     color: blue;
 }
+
 /****************************** VARIABLES*****************************/
 /*COLORS*/
 $color-primary: #9356DC;
@@ -151,6 +152,9 @@ $breakpoints:('tablette': 462px);
     background-color: $grey;
     padding: 40px 20px 64px 20px;
 }
+a {
+    color: $black;
+}
 .card {
     height: 290px;
     min-width: 100%;
@@ -226,6 +230,9 @@ footer i {
 }
 a {
     text-decoration: none;
+    
+}
+.color-white {
     color: $white;
 }
 address {
