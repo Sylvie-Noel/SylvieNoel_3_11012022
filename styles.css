@@ -49,8 +49,13 @@ header {
 
 .arrow {
   display: flex;
-  flex: 0.94;
+  margin-left: 30px;
+  flex: 0.15;
   font-size: 19px;
+}
+
+.empty {
+  flex: 1;
 }
 
 .logo {
@@ -310,6 +315,17 @@ address {
 }
 
 /****************************** COMPOSANTS ******************************/
+.btn-container {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+@media screen and (min-width: 820px) and (max-width: 1199px) {
+  .btn-container {
+    min-width: 48%;
+  }
+}
+
 .btn {
   background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
   height: 50px;
@@ -394,6 +410,7 @@ address {
   .meal {
     min-width: 48%;
     max-width: 48%;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
