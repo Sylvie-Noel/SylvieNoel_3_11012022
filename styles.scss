@@ -67,8 +67,12 @@ header {
 .arrow
 {
    display: flex;
-   flex: .94;
+   margin-left: 30px;
+   flex: .15;
    font-size: map-get($font-size, title2);
+}
+.empty {
+    flex: 1;
 }
 .logo {
     position: absolute;
@@ -286,6 +290,14 @@ address {
     font-style: normal;
 }
 /****************************** COMPOSANTS ******************************/
+.btn-container {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    @media screen and (min-width:820px )and (max-width:1199px) {
+        min-width: 48%;
+    }
+}
 .btn {
     background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary);
     height: 50px;
@@ -337,11 +349,38 @@ address {
     font-size: map-get($font-size, title1 );
     font-style: normal;
 }
+.global-padding-menu {
+    padding: 20px 17px 0 ;
+    @media screen and (min-width: 820px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+}
 .meal h2{
     border-bottom: solid $color-tertiary 3px;
-    width: 60px;
+    width: 45px;
     font-weight: lighter;
     font-size: map-get($font-size, title2 );
+}
+ .meal {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    @media screen and (min-width: 820px) {
+        min-width: 48%;
+        max-width: 48%;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 32%;
+        max-width: 32%;
+    }
+    &__cards {
+        max-width: 100%;
+    }
 }
 .flex-between {
     display: flex;
@@ -359,9 +398,7 @@ address {
         align-items: flex-end;
     }
 }
-.global-padding-menu {
-    padding: 20px 17px 0 ;
-}
+
 
 /****************************** MEDIA QUERIES ******************************/
 @mixin tablette{
