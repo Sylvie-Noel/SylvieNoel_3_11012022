@@ -144,6 +144,9 @@ header {
     margin-top: 25px;
     min-width: 300px;
     max-width: 422px;
+    &:hover {
+        background-color: lighten($color-primary, 35%);
+    }
     @media screen and (min-width: 940px) {
         max-width: 31%;
         min-width: 31%;
@@ -172,6 +175,12 @@ header {
     flex: 1;
     width: 100%;
    /* background-color: chartreuse;*/
+}
+.function-cards__card .phone  {
+    color: darken($grey, 50%);
+    &:hover {
+        color: $color-primary;
+    }
 }
 .choice {
     width: 75%;
