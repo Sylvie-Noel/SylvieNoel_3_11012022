@@ -136,7 +136,13 @@ header {
   min-width: 300px;
   max-width: 422px;
 }
-@media screen and (min-width: 1363px) {
+@media screen and (min-width: 940px) {
+  .function-cards__card {
+    max-width: 31%;
+    min-width: 31%;
+  }
+}
+@media screen and (min-width: 1346px) {
   .function-cards__card {
     margin-top: 0;
   }

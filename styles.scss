@@ -140,7 +140,11 @@ header {
     margin-top: 25px;
     min-width: 300px;
     max-width: 422px;
-    @media screen and (min-width: 1363px) {
+    @media screen and (min-width: 940px) {
+        max-width: 31%;
+        min-width: 31%;
+    }
+    @media screen and (min-width: 1346px) {
         margin-top: 0;
     }
 } 
