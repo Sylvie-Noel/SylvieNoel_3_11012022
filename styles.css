@@ -136,10 +136,14 @@ header {
   min-width: 300px;
   max-width: 422px;
 }
-@media screen and (min-width: 1346px) {
+@media screen and (min-width: 1363px) {
   .function-cards__card {
     margin-top: 0;
   }
+}
+
+.restaurants {
+  display: flex;
 }
 
 .number-icon {
@@ -306,7 +310,7 @@ address {
   height: 300px;
   width: 100%;
   overflow: hidden;
-  border-radius: 0 0 -15px -15px;
+  /*border-radius: 0 0 -15px -15px;*/
 }
 
 .menu {
@@ -320,8 +324,21 @@ address {
   padding: 15px 35px 0 20px;
 }
 
-.menu h1 {
+.menu_h1 {
   margin-bottom: 0;
+  font-size: 28px;
+}
+
+.menu i {
+  font-size: 28px;
+  font-style: normal;
+}
+
+.meal h2 {
+  border-bottom: solid #99E2D0 3px;
+  width: 60px;
+  font-weight: lighter;
+  font-size: 19px;
 }
 
 .flex-between {
