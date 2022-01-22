@@ -142,10 +142,6 @@ header {
   }
 }
 
-.restaurants {
-  display: flex;
-}
-
 .number-icon {
   width: 25%;
   display: flex;
@@ -181,6 +177,18 @@ header {
   padding: 40px 20px 64px 20px;
 }
 
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .restaurants__cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 a {
   color: #000;
 }
@@ -194,6 +202,24 @@ a {
   border-radius: 20px;
   margin-top: 20px;
   box-shadow: 0 4px 8px 0 #d9d9d9;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    min-width: 48%;
+    max-width: 48%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    min-width: 32%;
+    max-width: 32%;
+  }
+}
+@media screen and (min-width: 1346px) {
+  .card {
+    min-width: 24%;
+    max-width: 24%;
+  }
 }
 
 .card__image img {
