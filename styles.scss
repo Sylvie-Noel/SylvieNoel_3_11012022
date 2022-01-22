@@ -140,11 +140,14 @@ header {
     margin-top: 25px;
     min-width: 300px;
     max-width: 422px;
-    @media screen and (min-width: 1346px) {
+    @media screen and (min-width: 1363px) {
         margin-top: 0;
     }
 } 
-
+.restaurants{
+    display: flex;
+    
+}
 .number-icon {
     width: 25%;
     display: flex;

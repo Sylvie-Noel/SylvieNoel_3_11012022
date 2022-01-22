@@ -136,10 +136,14 @@ header {
   min-width: 300px;
   max-width: 422px;
 }
-@media screen and (min-width: 1346px) {
+@media screen and (min-width: 1363px) {
   .function-cards__card {
     margin-top: 0;
   }
+}
+
+.restaurants {
+  display: flex;
 }
 
 .number-icon {
