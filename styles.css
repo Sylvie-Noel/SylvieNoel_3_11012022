@@ -160,10 +160,6 @@ header {
   }
 }
 
-.function-cards__card:hover + .number-icon > .phone {
-  color: #9356DC;
-}
-
 .number-icon {
   width: 25%;
   display: flex;
@@ -190,14 +186,8 @@ header {
 
 .function-cards__card .phone {
   color: #737373;
-  /*&:hover {
-      color: $color-primary;
-  }*/
 }
 
-/*.function-cards__card:hover > .number-icon {
-    color: $color-primary;
-}*/
 .choice {
   width: 75%;
   font-weight: bold;

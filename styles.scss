@@ -159,15 +159,7 @@ header {
         margin-top: 0;
     }
 } 
-.function-cards__card {
-    &:hover {
-        & + .number-icon {
-            & > .phone {
-                color: $color-primary;
-            }
-        }
-    }
-}
+
 .number-icon {
     width: 25%;
     display: flex;
@@ -192,13 +184,8 @@ header {
 }
 .function-cards__card .phone  {
     color: darken($grey, 50%);
-    /*&:hover {
-        color: $color-primary;
-    }*/
 }
-/*.function-cards__card:hover > .number-icon {
-    color: $color-primary;
-}*/
+
 .choice {
     width: 75%;
     font-weight: bold;
