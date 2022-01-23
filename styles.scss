@@ -147,7 +147,9 @@ header {
     box-shadow: 0 4px 8px 4px darken($grey, 5%);
     &:hover {
         background-color: lighten($color-primary, 35%);
-
+        &:hover .phone{
+            color: $color-primary;
+        }        
     }
     @media screen and (min-width: 940px) {
         max-width: 31%;

@@ -145,6 +145,9 @@ header {
 .function-cards__card:hover {
   background-color: #f2eafb;
 }
+.function-cards__card:hover:hover .phone {
+  color: #9356DC;
+}
 @media screen and (min-width: 940px) {
   .function-cards__card {
     max-width: 31%;
