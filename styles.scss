@@ -3,7 +3,7 @@ h4, .menu_h1{ /*Seulement pour les menus*/
     font-family: 'Shrikhand', cursive;
 }
 /*TYPOGRAPHY POUR L'INDEX*/
-p, .paris__text, .btn__text, h1, h2, h3, .number, span, a {
+p, .paris__text, .btn__text, h1, h2, h3, .number, span, a, .card-text-mini__price {
     font-family: 'Roboto', sans-serif;
    
     /*text-align: center;*/
@@ -144,6 +144,13 @@ header {
     margin-top: 25px;
     min-width: 300px;
     max-width: 422px;
+    box-shadow: 0 4px 8px 4px darken($grey, 5%);
+    &:hover {
+        background-color: lighten($color-primary, 35%);
+        &:hover .phone{
+            color: $color-primary;
+        }        
+    }
     @media screen and (min-width: 940px) {
         max-width: 31%;
         min-width: 31%;
@@ -152,6 +159,15 @@ header {
         margin-top: 0;
     }
 } 
+.function-cards__card {
+    &:hover {
+        & + .number-icon {
+            & > .phone {
+                color: $color-primary;
+            }
+        }
+    }
+}
 .number-icon {
     width: 25%;
     display: flex;
@@ -168,11 +184,21 @@ header {
     color: $white;
     border-radius: 30px;
 }
+
 .phone {
     flex: 1;
     width: 100%;
    /* background-color: chartreuse;*/
 }
+.function-cards__card .phone  {
+    color: darken($grey, 50%);
+    /*&:hover {
+        color: $color-primary;
+    }*/
+}
+/*.function-cards__card:hover > .number-icon {
+    color: $color-primary;
+}*/
 .choice {
     width: 75%;
     font-weight: bold;
@@ -237,6 +263,12 @@ a {
         
         flex-direction: column;
     }
+}
+.card-text-mini:hover, .btn, .function-cards__card {
+    cursor: pointer;
+}
+.card-text-mini__price {
+    font-weight: bold;
 }
  /*p, h3 { à déclencher uniquement pendant l'animation
     overflow: hidden;

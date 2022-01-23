@@ -6,7 +6,7 @@ h4, .menu_h1 {
 }
 
 /*TYPOGRAPHY POUR L'INDEX*/
-p, .paris__text, .btn__text, h1, h2, h3, .number, span, a {
+p, .paris__text, .btn__text, h1, h2, h3, .number, span, a, .card-text-mini__price {
   font-family: "Roboto", sans-serif;
   /*text-align: center;*/
 }
@@ -140,6 +140,13 @@ header {
   margin-top: 25px;
   min-width: 300px;
   max-width: 422px;
+  box-shadow: 0 4px 8px 4px #e5e5e5;
+}
+.function-cards__card:hover {
+  background-color: #f2eafb;
+}
+.function-cards__card:hover:hover .phone {
+  color: #9356DC;
 }
 @media screen and (min-width: 940px) {
   .function-cards__card {
@@ -151,6 +158,10 @@ header {
   .function-cards__card {
     margin-top: 0;
   }
+}
+
+.function-cards__card:hover + .number-icon > .phone {
+  color: #9356DC;
 }
 
 .number-icon {
@@ -177,6 +188,16 @@ header {
   /* background-color: chartreuse;*/
 }
 
+.function-cards__card .phone {
+  color: #737373;
+  /*&:hover {
+      color: $color-primary;
+  }*/
+}
+
+/*.function-cards__card:hover > .number-icon {
+    color: $color-primary;
+}*/
 .choice {
   width: 75%;
   font-weight: bold;
@@ -253,6 +274,14 @@ a {
 }
 .card-text__text, .card-text-mini__text {
   flex-direction: column;
+}
+
+.card-text-mini:hover, .btn, .function-cards__card {
+  cursor: pointer;
+}
+
+.card-text-mini__price {
+  font-weight: bold;
 }
 
 /*p, h3 { à déclencher uniquement pendant l'animation
