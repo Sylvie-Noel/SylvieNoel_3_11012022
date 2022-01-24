@@ -271,17 +271,29 @@ a {
   flex-direction: column;
 }
 
-.card-text-mini {
-  animation: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
-  animation-delay: 0;
+/*.card-text-mini{
+    animation: 500ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
+    animation-delay: 0;
+    & + .opacity-delay { 
+        animation: 600ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
+        animation-delay: 50ms;
+       &-two {
+        animation: 700ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
+        animation-delay: 100ms;
+        }
+    }
+
+}*/
+.meal__cards {
+  animation: 200ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
 }
-.card-text-mini + .opacity-delay {
-  animation: 600ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
-  animation-delay: 100ms;
+
+.plate-cards {
+  animation: 400ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
 }
-.card-text-mini + .opacity-delay-two {
-  animation: 700ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
-  animation-delay: 200ms;
+
+.dessert-cards {
+  animation: 600ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
 }
 
 @keyframes opacityshift {
