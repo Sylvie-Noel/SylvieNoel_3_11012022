@@ -285,15 +285,16 @@ a {
 
 }*/
 .meal__cards {
-  animation: 200ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;
+  /*animation: 200ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;*/
+  animation: 500ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
 }
 
 .plate-cards {
-  animation: 400ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
+  animation: 750ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
 }
 
 .dessert-cards {
-  animation: 600ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
+  animation: 1000ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
 }
 
 @keyframes opacityshift {
