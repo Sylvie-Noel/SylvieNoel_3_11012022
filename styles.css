@@ -674,7 +674,7 @@ address {
           align-items: center;
   -webkit-animation: hide 3s;
           animation: hide 3s;
-  opacity: 0.9;
+  opacity: 0.8;
   z-index: -1;
   /*animation: display 1s timing-function 1s 1 direction fill-mode;*/
 }
