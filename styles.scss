@@ -369,13 +369,15 @@ a {
 .card-text-mini__price {
     font-weight: bold;
 }
- /*p, h3 { à déclencher uniquement pendant l'animation
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 250px;
-    
-}*/
+.card-text__text{
+    flex: 1;
+    min-width: 0;
+    p, h3 { 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
 .card-text__text h3 {
     margin: 0;
 }

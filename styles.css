@@ -532,13 +532,19 @@ a {
   font-weight: bold;
 }
 
-/*p, h3 { à déclencher uniquement pendant l'animation
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 250px;
-    
-}*/
+.card-text__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+}
+
+.card-text__text p, .card-text__text h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .card-text__text h3 {
   margin: 0;
 }
