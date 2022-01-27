@@ -328,6 +328,31 @@ header {
   opacity: 1;
 }
 
+/***************************** EFFET COEUR MENU*****************************/
+.card-text__icon_3 {
+  position: absolute;
+  z-index: 2;
+  background-color: #f2f2f2;
+  right: 50px;
+}
+
+.card-text__icon_3:hover {
+  -webkit-animation: disappear 380ms linear forwards;
+          animation: disappear 380ms linear forwards;
+}
+
+.card-text__icon2_4 {
+  position: absolute;
+  right: 50px;
+  z-index: 1;
+  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*.card-text__icon2:hover .fa-heart::after{
     content: '';
     animation: appear 1s linear forwards;

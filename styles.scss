@@ -214,7 +214,7 @@ header {
     position: absolute;
     right: 20px;
 }
-.card-text__icon{
+.card-text__icon {
     z-index: 2;
     opacity: 1;
     background-color: $white;
@@ -228,6 +228,26 @@ header {
 .card-text__icon2{
     z-index: 1;
     opacity: 1;
+}
+/***************************** EFFET COEUR MENU*****************************/
+.card-text__icon_3 {
+    position: absolute;
+    z-index: 2;
+    background-color: $grey;
+        right: 50px;
+        &:hover {
+            animation: disappear 380ms linear forwards;
+            }
+}
+.card-text__icon2_4{
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+    color: $color-primary;
+    background: linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /*.card-text__icon2:hover .fa-heart::after{
     content: '';
