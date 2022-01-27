@@ -300,9 +300,48 @@ header {
   }
 }
 
+.card-text {
+  position: relative;
+}
+
+.card-text__icon, .card-text__icon2 {
+  position: absolute;
+  right: 20px;
+}
+
+.card-text__icon {
+  z-index: 2;
+  opacity: 1;
+  background-color: #fff;
+  /* &:hover .fa-heart::after{
+        animation: appear 1s linear forwards;
+    }*/
+}
+
+.card-text__icon:hover {
+  -webkit-animation: disappear 380ms linear forwards;
+          animation: disappear 380ms linear forwards;
+}
+
+.card-text__icon2 {
+  z-index: 1;
+  opacity: 1;
+}
+
+/*.card-text__icon2:hover .fa-heart::after{
+    content: '';
+    animation: appear 1s linear forwards;
+    
+
+}*/
 .far {
   font-size: 28px;
   color: #000;
+}
+
+.fa-heart:hover {
+  -webkit-animation: appear 1s linear forwards;
+          animation: appear 1s linear forwards;
 }
 
 .card-text__icon2 .fa-heart {
@@ -314,8 +353,33 @@ header {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 1;
 }
 
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*@keyframes appear {
+    0% {opacity: 1; z-index: 1;}
+    100%{opacity: 1; z-index: 3;visibility: visible;}
+}*/
 a {
   color: #000;
 }
