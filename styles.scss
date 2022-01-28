@@ -237,8 +237,10 @@ header {
     z-index: 2;
     background-color: $grey;
         right: 50px;
-        &:hover + .card-text__icon2_4 {
-            animation: disappear 520ms linear forwards ;
+        opacity: 1;
+        transition: opacity 1000ms ease-out;
+        &:hover {
+            opacity: 0;
             }
 }
 .card-text__icon2_4{
@@ -260,9 +262,13 @@ header {
 .far {font-size: map-get($font-size, title1 );
     color: $black; 
 }
-.fa-heart:hover {
+ /* animation: disappear 520ms ease-in-out forwards;
+        }*/
+   /* &:hover .fa-heart::after{
+        animation: appear 1s linear forwards;
+    }*//*.fa-heart:hover {
     animation: appear 1s linear forwards;
-}
+}*/
 .card-text__icon2 .fa-heart {
     color: $color-primary;
     display: block;
@@ -394,38 +400,42 @@ a {
 .card-text-mini {
     
     overflow: hidden;
-    &:hover .check {
-        transform: translate(-80px);
-        
-    }
-    &:hover .check__icon
-    {
-    animation: turn .5s linear forwards;}
-    &:hover .card-text-mini__price{
+   .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        height: 85px;
+        width: 80px;
+        border-radius: 0 20px 20px 0;
+        margin-left: 20px;
+        position: absolute;
+        top: 0;
+        right: -80px;
+        transition: transform .5s ease-in-out;
+        &:hover {
             transform: translate(-80px);
-            transition: .5s;
+            
         }
-}
-.check {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-tertiary;
-    height: 85px;
-    width: 80px;
-    border-radius: 0 20px 20px 0;
-    margin-left: 20px;
-    
-    top: 0;
-    right: -80px;
-    transition: transform .5s ease-in-out;
-    &__icon{
-       background: $white;
-       -webkit-background-clip: text;
-       background-clip: text;
-       -webkit-text-fill-color: transparent;
+        &__icon{
+        background: $white;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
     }
 }
+    
+.card-text-mini:hover .check{
+    transform: translate(-80px);
+    .check__icon{
+        animation: turn .5s linear forwards;
+    }
+}
+.card-text-mini:hover .card-text-mini__price{
+    transform: translate(-80px);
+}
+
 @keyframes turn {
     0% { transform: rotate(0deg);}
     100%{transform: rotate(360deg);}

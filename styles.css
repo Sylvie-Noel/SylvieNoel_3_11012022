@@ -336,11 +336,13 @@ header {
   z-index: 2;
   background-color: #f2f2f2;
   right: 50px;
+  opacity: 1;
+  -webkit-transition: opacity 1000ms ease-out;
+  transition: opacity 1000ms ease-out;
 }
 
-.card-text__icon_3:hover + .card-text__icon2_4 {
-  -webkit-animation: disappear 520ms linear forwards;
-          animation: disappear 520ms linear forwards;
+.card-text__icon_3:hover {
+  opacity: 0;
 }
 
 .card-text__icon2_4 {
@@ -366,11 +368,14 @@ header {
   color: #000;
 }
 
-.fa-heart:hover {
-  -webkit-animation: appear 1s linear forwards;
-          animation: appear 1s linear forwards;
-}
-
+/* animation: disappear 520ms ease-in-out forwards;
+        }*/
+/* &:hover .fa-heart::after{
+        animation: appear 1s linear forwards;
+    }*/
+/*.fa-heart:hover {
+    animation: appear 1s linear forwards;
+}*/
 .card-text__icon2 .fa-heart {
   color: #9356DC;
   display: block;
@@ -563,26 +568,10 @@ a {
   overflow: hidden;
 }
 
-.card-text-mini:hover .check {
-  -webkit-transform: translate(-80px);
-          transform: translate(-80px);
-}
-
-.card-text-mini:hover .check__icon {
-  -webkit-animation: turn .5s linear forwards;
-          animation: turn .5s linear forwards;
-}
-
-.card-text-mini:hover .card-text-mini__price {
-  -webkit-transform: translate(-80px);
-          transform: translate(-80px);
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.check {
-  display: -ms-grid;
-  display: grid;
+.card-text-mini .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -594,6 +583,7 @@ a {
   width: 80px;
   border-radius: 0 20px 20px 0;
   margin-left: 20px;
+  position: absolute;
   top: 0;
   right: -80px;
   -webkit-transition: -webkit-transform .5s ease-in-out;
@@ -602,11 +592,31 @@ a {
   transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
 }
 
-.check__icon {
+.card-text-mini .check:hover {
+  -webkit-transform: translate(-80px);
+          transform: translate(-80px);
+}
+
+.card-text-mini .check__icon {
   background: #fff;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card-text-mini:hover .check {
+  -webkit-transform: translate(-80px);
+          transform: translate(-80px);
+}
+
+.card-text-mini:hover .check .check__icon {
+  -webkit-animation: turn .5s linear forwards;
+          animation: turn .5s linear forwards;
+}
+
+.card-text-mini:hover .card-text-mini__price {
+  -webkit-transform: translate(-80px);
+          transform: translate(-80px);
 }
 
 @-webkit-keyframes turn {
