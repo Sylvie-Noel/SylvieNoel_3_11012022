@@ -218,8 +218,10 @@ header {
     z-index: 2;
     opacity: 1;
     background-color: $white;
+    transition: opacity 1000ms ease-out;
     &:hover {
-        animation: disappear 380ms linear forwards;
+        opacity: 0;
+        /*animation: disappear 520ms ease-in-out forwards;*/
         }
    /* &:hover .fa-heart::after{
         animation: appear 1s linear forwards;
@@ -235,8 +237,8 @@ header {
     z-index: 2;
     background-color: $grey;
         right: 50px;
-        &:hover {
-            animation: disappear 380ms linear forwards;
+        &:hover + .card-text__icon2_4 {
+            animation: disappear 520ms linear forwards ;
             }
 }
 .card-text__icon2_4{
@@ -273,7 +275,7 @@ header {
 }
 @keyframes disappear {
     0% {opacity: 1;}
-    100%{opacity: 0; visibility: hidden;}
+    100%{opacity: 0;}
 }
 /*@keyframes appear {
     0% {opacity: 1; z-index: 1;}
@@ -368,15 +370,65 @@ a {
 }
 .card-text-mini__price {
     font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+    right: 20px;
+    bottom: 20px;
+    transition: transform .5s ease-in-out;   
 }
 .card-text__text{
     flex: 1;
     min-width: 0;
+    white-space: nowrap;
+    > div {
+        display: inline-block;
+        background-color: greenyellow;
+    }
+    
     p, h3 { 
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
+}
+.card-text-mini {
+    
+    overflow: hidden;
+    &:hover .check {
+        transform: translate(-80px);
+        
+    }
+    &:hover .check__icon
+    {
+    animation: turn .5s linear forwards;}
+    &:hover .card-text-mini__price{
+            transform: translate(-80px);
+            transition: .5s;
+        }
+}
+.check {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-tertiary;
+    height: 85px;
+    width: 80px;
+    border-radius: 0 20px 20px 0;
+    margin-left: 20px;
+    
+    top: 0;
+    right: -80px;
+    transition: transform .5s ease-in-out;
+    &__icon{
+       background: $white;
+       -webkit-background-clip: text;
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+    }
+}
+@keyframes turn {
+    0% { transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }
 .card-text__text h3 {
     margin: 0;

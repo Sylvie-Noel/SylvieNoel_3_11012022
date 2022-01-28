@@ -313,14 +313,16 @@ header {
   z-index: 2;
   opacity: 1;
   background-color: #fff;
+  -webkit-transition: opacity 1000ms ease-out;
+  transition: opacity 1000ms ease-out;
   /* &:hover .fa-heart::after{
         animation: appear 1s linear forwards;
     }*/
 }
 
 .card-text__icon:hover {
-  -webkit-animation: disappear 380ms linear forwards;
-          animation: disappear 380ms linear forwards;
+  opacity: 0;
+  /*animation: disappear 520ms ease-in-out forwards;*/
 }
 
 .card-text__icon2 {
@@ -336,9 +338,9 @@ header {
   right: 50px;
 }
 
-.card-text__icon_3:hover {
-  -webkit-animation: disappear 380ms linear forwards;
-          animation: disappear 380ms linear forwards;
+.card-text__icon_3:hover + .card-text__icon2_4 {
+  -webkit-animation: disappear 520ms linear forwards;
+          animation: disappear 520ms linear forwards;
 }
 
 .card-text__icon2_4 {
@@ -387,7 +389,6 @@ header {
   }
   100% {
     opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -397,7 +398,6 @@ header {
   }
   100% {
     opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -530,6 +530,14 @@ a {
 
 .card-text-mini__price {
   font-weight: bold;
+  white-space: nowrap;
+  display: inline-block;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
 }
 
 .card-text__text {
@@ -537,12 +545,90 @@ a {
       -ms-flex: 1;
           flex: 1;
   min-width: 0;
+  white-space: nowrap;
+}
+
+.card-text__text > div {
+  display: inline-block;
+  background-color: greenyellow;
 }
 
 .card-text__text p, .card-text__text h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.card-text-mini {
+  overflow: hidden;
+}
+
+.card-text-mini:hover .check {
+  -webkit-transform: translate(-80px);
+          transform: translate(-80px);
+}
+
+.card-text-mini:hover .check__icon {
+  -webkit-animation: turn .5s linear forwards;
+          animation: turn .5s linear forwards;
+}
+
+.card-text-mini:hover .card-text-mini__price {
+  -webkit-transform: translate(-80px);
+          transform: translate(-80px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.check {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  height: 85px;
+  width: 80px;
+  border-radius: 0 20px 20px 0;
+  margin-left: 20px;
+  top: 0;
+  right: -80px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.check__icon {
+  background: #fff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes turn {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .card-text__text h3 {
