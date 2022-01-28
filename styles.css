@@ -604,6 +604,13 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
+.ghost {
+  width: 0px;
+  height: 50px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
 .card-text-mini:hover .check {
   -webkit-transform: translate(-80px);
           transform: translate(-80px);
@@ -617,6 +624,10 @@ a {
 .card-text-mini:hover .card-text-mini__price {
   -webkit-transform: translate(-80px);
           transform: translate(-80px);
+}
+
+.card-text-mini:hover .ghost {
+  width: 80px;
 }
 
 @-webkit-keyframes turn {

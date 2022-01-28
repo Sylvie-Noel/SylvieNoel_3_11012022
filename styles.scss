@@ -398,7 +398,6 @@ a {
     }
 }
 .card-text-mini {
-    
     overflow: hidden;
    .check {
         display: flex;
@@ -425,7 +424,11 @@ a {
         }
     }
 }
-    
+.ghost{
+    width: 0px;
+    height: 50px;
+    transition-duration: .5s;
+  }   
 .card-text-mini:hover .check{
     transform: translate(-80px);
     .check__icon{
@@ -435,6 +438,10 @@ a {
 .card-text-mini:hover .card-text-mini__price{
     transform: translate(-80px);
 }
+.card-text-mini:hover {
+    .ghost{width: 80px;}
+}
+
 
 @keyframes turn {
     0% { transform: rotate(0deg);}
