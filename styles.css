@@ -410,6 +410,7 @@ header {
     0% {opacity: 1; z-index: 1;}
     100%{opacity: 1; z-index: 3;visibility: visible;}
 }*/
+/***************************** FIN EFFET COEUR *************************************/
 a {
   color: #000;
 }
@@ -674,6 +675,7 @@ span {
   border-radius: 2px;
 }
 
+/*********************************** FOOTER ***********************************/
 footer {
   background-color: #333333;
   color: #fff;

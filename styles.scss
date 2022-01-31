@@ -287,6 +287,7 @@ header {
     0% {opacity: 1; z-index: 1;}
     100%{opacity: 1; z-index: 3;visibility: visible;}
 }*/
+/***************************** FIN EFFET COEUR *************************************/
 
 a {
     color: $black;
@@ -464,6 +465,8 @@ span {
     font-weight: bold;
     border-radius: 2px;
 }
+
+/*********************************** FOOTER ***********************************/
 footer
 {
     background-color: lighten($black, 20%) ;
@@ -491,6 +494,8 @@ a {
 address {
     font-style: normal;
 }
+
+
 /****************************** COMPOSANTS ******************************/
 .btn-container {
     display: flex;
