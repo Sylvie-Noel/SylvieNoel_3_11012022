@@ -1,0 +1,31 @@
+header {
+    height: 70px;
+    position:relative;
+}
+.logo {
+    position: absolute;
+    display: flex;
+    flex: .95;
+}
+.logo img
+{
+    width: 180px;
+    height: 30px;
+}
+
+/****************** PARIS BANNER ******************/
+.paris {
+    box-shadow: inset 0 5px 4px -3px darken($grey, 20%);
+    background-color: darken($grey, 4%);
+}
+.paris__text {
+    height: 50px;
+    margin-left: 15px;
+}
+.titleh1-btn-container {
+    background-color: $grey;
+    text-align: center;
+}
+.titleh1 {
+    flex-direction: column;
+}

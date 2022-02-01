@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
+h4, .menu_h1{ /*Seulement pour les menus*/
+    font-family: 'Shrikhand', cursive;
+}
+/*TYPOGRAPHY POUR L'INDEX*/
+p, .paris__text, .btn__text, h1, h2, h3, .number, span, a, .card-text-mini__price {
+    font-family: 'Roboto', sans-serif;
+   
+    /*text-align: center;*/
+}

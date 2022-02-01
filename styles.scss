@@ -1,22 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-h4, .menu_h1{ /*Seulement pour les menus*/
-    font-family: 'Shrikhand', cursive;
-}
-/*TYPOGRAPHY POUR L'INDEX*/
-p, .paris__text, .btn__text, h1, h2, h3, .number, span, a, .card-text-mini__price {
-    font-family: 'Roboto', sans-serif;
-   
-    /*text-align: center;*/
-}
-*
-{
-    box-sizing: border-box;
-}
-html,body {
-    margin: 0;
-    padding: 0;
-}
-body{position: relative; z-index: 0;background-color: transparent;}
+@import "./sass/utils/variables";
+
+@import "./sass/base/typography";
+@import "./sass/base/base";
+
+@import "./sass/layout/header";
+
+@import "./sass/components/buttons";
+
+@import "./sass/pages/menu";
 .flex-center
 {
     display: flex;
@@ -35,20 +26,8 @@ p{
 }
 
 
-/****************************** VARIABLES*****************************/
-/*COLORS*/
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$white: #fff;
-$black: #000;
-$grey: #f2f2f2;
+/* VARIABLES dans le dossier utils/variable*/
 
-/*FONT-SIZE*/
-$font-size:(title1: 28px, title2: 19px, title3: 17px);
-
-/*BREAKPOINTS*/
-$breakpoints:('tablette': 462px);
 
 
 /****************************** FONCTIONS ******************************/
@@ -62,47 +41,13 @@ $breakpoints:('tablette': 462px);
 
 
 
-/****************************** SELECTEURS ******************************/
-header {
-    height: 70px;
-    position:relative;
-}
-.arrow
-{
-   display: flex;
-   margin-left: 30px;
-   flex: .15;
-   font-size: map-get($font-size, title2);
-}
-.empty {
-    flex: 1;
-}
-.logo {
-    position: absolute;
-    display: flex;
-    flex: .95;
-}
-.logo img
-{
-    width: 180px;
-    height: 30px;
-}
-.paris {
-    box-shadow: inset 0 5px 4px -3px darken($grey, 20%);
-    background-color: darken($grey, 4%);
-}
-.paris__text {
-    height: 50px;
-    margin-left: 15px;
-}
-.titleh1-btn-container {
-    background-color: $grey;
-    text-align: center;
-}
-.titleh1 {
-    flex-direction: column;
-}
- 
+/****************************** HEADER ******************************/
+
+
+
+/**************************** BANNER INDEX *****************************/
+
+ /************************** FONCTIONNEMENT ****************************/
 .function-section {
     padding: 40px 20px 64px 20px;
     display: flex;
@@ -497,6 +442,7 @@ address {
 
 
 /****************************** COMPOSANTS ******************************/
+
 .btn-container {
     display: flex;
     justify-content: center;
@@ -640,33 +586,30 @@ address {
     animation: spin 2.4s linear forwards;
     animation-iteration-count: 1;
 }
-.loader-circles:after{
+.loader-circles:after,
+.loader-circles:before{
     content: '';
     position: absolute;
+    border-radius: 50px;
+    border: 4px solid transparent;
+}
+.loader-circles:after{
     top: 5px; /*remplacer les valeurs négatives par des positives a réduit la taille du cercle*/
     left: 5px;
     bottom: 5px;
     right: 5px;
-    border-radius: 50px;
-    border: 4px solid transparent;
-    border-top-color: $color-secondary;
-    opacity: 1;
+    border-top-color: $color-secondary;  
     animation: spin 2.3s linear forwards;
     animation-iteration-count: 1;
 }
 .loader-circles:before{
-    content: '';
-    position: absolute;
-    top: 14px; /*remplacer les valeurs négatives par des positives a réduit la taille du cercle*/
+    top: 14px; 
     left: 14px;
     bottom: 14px;
     right: 14px;
-    border-radius: 50px;
-    border: 4px solid transparent;
     border-top-color: $color-tertiary;
-    opacity: 1;
     animation: spin 1.2s linear forwards;
-   animation-iteration-count: 2;
+    animation-iteration-count: 2;
 }
 
 @keyframes spin{
