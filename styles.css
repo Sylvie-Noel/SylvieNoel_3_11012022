@@ -74,6 +74,32 @@ header {
           flex-direction: column;
 }
 
+.btn {
+  background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
+  height: 50px;
+  width: 220px;
+  margin: 20px 0 50px 0;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 8px 4px #d9d9d9;
+          box-shadow: 0 4px 8px 4px #d9d9d9;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0 8px 16px 8px #bfbfbf;
+          box-shadow: 0 8px 16px 8px #bfbfbf;
+}
+
+.btn__text {
+  display: inline-block;
+}
+
+.btn--small {
+  width: 180px;
+  margin: 42px 0 56px 0;
+}
+
 /********************** HEADER MENU ************************/
 .arrow {
   display: -webkit-box;
@@ -275,6 +301,7 @@ p {
   /* background-color: cadetblue;*/
 }
 
+/************************* RESTAURANTS *****************************/
 .restaurants {
   background-color: #f2f2f2;
   padding: 40px 20px 64px 20px;
@@ -728,32 +755,6 @@ address {
   .btn-container {
     min-width: 48%;
   }
-}
-
-.btn {
-  background-image: radial-gradient(ellipse at 25% 20%, #FF79DA, #9356DC);
-  height: 50px;
-  width: 220px;
-  margin: 20px 0 50px 0;
-  color: #fff;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 4px 8px 4px #d9d9d9;
-          box-shadow: 0 4px 8px 4px #d9d9d9;
-}
-
-.btn:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 0 8px 16px 8px #bfbfbf;
-          box-shadow: 0 8px 16px 8px #bfbfbf;
-}
-
-.btn__text {
-  display: inline-block;
-}
-
-.btn--small {
-  width: 180px;
-  margin: 42px 0 56px 0;
 }
 
 /****************************** MENUS ******************************/

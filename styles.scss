@@ -139,6 +139,7 @@ p{
     font-weight: bold;
    /* background-color: cadetblue;*/
 }
+/************************* RESTAURANTS *****************************/
 .restaurants {
     background-color: $grey;
     padding: 40px 20px 64px 20px;
@@ -451,26 +452,7 @@ address {
         min-width: 48%;
     }
 }
-.btn {
-    background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary);
-    height: 50px;
-    width: 220px;
-    margin: 20px 0 50px 0;
-    color: $white;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 4px darken($grey, 10%);
-    &:hover {
-        opacity: 0.8;
-        box-shadow: 0 8px 16px 8px darken($grey , 20%);
-    }
-    &__text{
-        display: inline-block;
-    }   
-    &--small {
-        width: 180px;
-        margin: 42px 0 56px 0;
-    }
-}
+
 /****************************** MENUS ******************************/
 
 .omf-banner {
