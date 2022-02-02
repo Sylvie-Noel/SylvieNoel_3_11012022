@@ -275,6 +275,388 @@ address {
   }
 }
 
+#function-section {
+  padding: 40px 20px 64px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1637px) {
+  #function-section {
+    padding: 64px 20px;
+    margin-bottom: 0%;
+  }
+}
+
+.function-cards {
+  min-width: 100%;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* background-color: blue;*/
+}
+
+@media screen and (min-width: 1634px) {
+  .function-cards {
+    min-width: 89%;
+    max-width: 89%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.function-cards__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  height: 80px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 25px;
+  min-width: 300px;
+  max-width: 422px;
+  -webkit-box-shadow: 0 4px 8px 4px #e5e5e5;
+          box-shadow: 0 4px 8px 4px #e5e5e5;
+}
+
+.function-cards__card:hover {
+  background-color: #f2eafb;
+}
+
+.function-cards__card:hover:hover .phone {
+  color: #9356DC;
+}
+
+@media screen and (min-width: 940px) {
+  .function-cards__card {
+    max-width: 31%;
+    min-width: 31%;
+  }
+}
+
+@media screen and (min-width: 1346px) {
+  .function-cards__card {
+    margin-top: 0;
+  }
+}
+
+.number-icon {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  /*background-color: blue;*/
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: -10px;
+  border-radius: 20px 0 0 20px;
+}
+
+.number {
+  height: 20px;
+  width: 20px;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.phone {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  /* background-color: chartreuse;*/
+}
+
+.function-cards__card .phone {
+  color: #737373;
+}
+
+.choice {
+  width: 75%;
+  font-weight: bold;
+  /* background-color: cadetblue;*/
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+  padding: 40px 20px 64px 20px;
+}
+
+.restaurants__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.card-text {
+  position: relative;
+}
+
+.card-text__icon,
+.card-text__icon2,
+.card-text__icon2_4,
+.card-text__icon_3 {
+  position: absolute;
+  width: 30px;
+}
+
+.card-text__icon, .card-text__icon2 {
+  right: 20px;
+}
+
+.card-text__icon {
+  z-index: 2;
+  opacity: 1;
+  background-color: #fff;
+  -webkit-transition: opacity 1000ms ease-out;
+  transition: opacity 1000ms ease-out;
+  /* &:hover .fa-heart::after{
+        animation: appear 1s linear forwards;
+    }*/
+}
+
+.card-text__icon:hover {
+  opacity: 0;
+  /*animation: disappear 520ms ease-in-out forwards;*/
+}
+
+.card-text__icon2 {
+  z-index: 1;
+  opacity: 1;
+}
+
+.card-text__icon2 .fa-heart {
+  color: #9356DC;
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  font-size: 28px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/***************************** EFFET COEUR MENU*****************************/
+.card-text__icon2_4,
+.card-text__icon_3 {
+  right: 50px;
+}
+
+.card-text__icon_3 {
+  z-index: 2;
+  background-color: #f2f2f2;
+  opacity: 1;
+  -webkit-transition: opacity 1000ms ease-out;
+  transition: opacity 1000ms ease-out;
+}
+
+.card-text__icon_3:hover {
+  opacity: 0;
+}
+
+.card-text__icon2_4 {
+  z-index: 1;
+  color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*.card-text__icon2:hover .fa-heart::after{
+    content: '';
+    animation: appear 1s linear forwards;
+    
+
+}*/
+.far {
+  font-size: 28px;
+  color: #000;
+}
+
+/* animation: disappear 520ms ease-in-out forwards;
+        }*/
+/* &:hover .fa-heart::after{
+        animation: appear 1s linear forwards;
+    }*/
+/*.fa-heart:hover {
+    animation: appear 1s linear forwards;
+}*/
+/****************** CARTES RESTAURANT **********************/
+a {
+  color: #000;
+}
+
+.card {
+  height: 290px;
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 #d9d9d9;
+          box-shadow: 0 4px 8px 0 #d9d9d9;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    min-width: 48%;
+    max-width: 48%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    min-width: 32%;
+    max-width: 32%;
+  }
+}
+
+@media screen and (min-width: 1346px) {
+  .card {
+    min-width: 24%;
+    max-width: 24%;
+  }
+}
+
+.card__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 190px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__image img__menu img {
+  border-radius: 0%;
+}
+
+span {
+  position: absolute;
+  height: 32px;
+  width: 90px;
+  right: 20px;
+  top: 20px;
+  color: #278870;
+  background-color: #99E2D0;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.card-text {
+  border-radius: 0 0 20px 20px;
+}
+
+.card-text-mini {
+  border-radius: 20px;
+}
+
+.card-text, .card-text-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 18px;
+  background-color: #fff;
+}
+
+.card-text__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 462px) {
+  #function-section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #function-section .function-cards {
+    -moz-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+
 /********************** HEADER MENU ************************/
 .arrow {
   display: -webkit-box;
@@ -473,7 +855,7 @@ address {
 .card-text-mini__price {
   font-weight: bold;
   white-space: nowrap;
-  display: inline-block;
+  /*display: inline-block;*/
   right: 20px;
   bottom: 20px;
   -webkit-transition: -webkit-transform .5s ease-in-out;
@@ -554,8 +936,8 @@ address {
 }
 
 .card-text-mini:hover .check .check__icon {
-  -webkit-animation: turn .5s linear forwards;
-          animation: turn .5s linear forwards;
+  -webkit-animation: turn .5s linear;
+          animation: turn .5s linear;
 }
 
 .card-text-mini:hover .card-text-mini__price {
@@ -615,90 +997,6 @@ address {
   }
 }
 
-.card {
-  height: 290px;
-  min-width: 100%;
-  max-width: 100%;
-  position: relative;
-  background-color: #fff;
-  border-radius: 20px;
-  margin-top: 20px;
-  -webkit-box-shadow: 0 4px 8px 0 #d9d9d9;
-          box-shadow: 0 4px 8px 0 #d9d9d9;
-}
-
-@media screen and (min-width: 768px) {
-  .card {
-    min-width: 48%;
-    max-width: 48%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .card {
-    min-width: 32%;
-    max-width: 32%;
-  }
-}
-
-@media screen and (min-width: 1346px) {
-  .card {
-    min-width: 24%;
-    max-width: 24%;
-  }
-}
-
-.card__image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 190px;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 20px 20px 0 0;
-}
-
-.card__image img__menu img {
-  border-radius: 0%;
-}
-
-span {
-  position: absolute;
-  height: 32px;
-  width: 90px;
-  right: 20px;
-  top: 20px;
-  color: #278870;
-  background-color: #99E2D0;
-  font-weight: bold;
-  border-radius: 2px;
-}
-
-.card-text {
-  border-radius: 0 0 20px 20px;
-}
-
-.card-text-mini {
-  border-radius: 20px;
-}
-
-.card-text, .card-text-mini {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 18px;
-  background-color: #fff;
-}
-
-.card-text__text, .card-text-mini__text {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -731,315 +1029,28 @@ p {
 
 /* VARIABLES dans le dossier utils/variable*/
 /****************************** FONCTIONS ******************************/
+/************************* RESTAURANTS **************************/
+/************* MEDIA SCREEN FONCTION **********************/
+/************* MEDIA SCREEN FONCTION FIN **********************/
 /****************************** HEADER ******************************/
 /**************************** BANNER INDEX *****************************/
 /************************** FONCTIONNEMENT ****************************/
-.function-section {
-  padding: 40px 20px 64px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 64px;
-}
-
-@media screen and (min-width: 462px) {
-  .function-section {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    min-width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (min-width: 1637px) {
-  .function-section {
-    padding: 64px 20px;
-    margin-bottom: 0%;
-  }
-}
-
-.function-cards {
-  min-width: 100%;
-  max-width: 100%;
-  /* background-color: blue;*/
-}
-
-@media screen and (min-width: 462px) {
-  .function-cards {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
-  }
-}
-
-@media screen and (min-width: 1634px) {
-  .function-cards {
-    min-width: 89%;
-    max-width: 89%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.function-cards__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #f2f2f2;
-  height: 80px;
-  width: 100%;
-  border-radius: 20px;
-  margin-top: 25px;
-  min-width: 300px;
-  max-width: 422px;
-  -webkit-box-shadow: 0 4px 8px 4px #e5e5e5;
-          box-shadow: 0 4px 8px 4px #e5e5e5;
-}
-
-.function-cards__card:hover {
-  background-color: #f2eafb;
-}
-
-.function-cards__card:hover:hover .phone {
-  color: #9356DC;
-}
-
-@media screen and (min-width: 940px) {
-  .function-cards__card {
-    max-width: 31%;
-    min-width: 31%;
-  }
-}
-
-@media screen and (min-width: 1346px) {
-  .function-cards__card {
-    margin-top: 0;
-  }
-}
-
-.number-icon {
-  width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  /*background-color: blue;*/
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: -10px;
-  border-radius: 20px 0 0 20px;
-}
-
-.number {
-  height: 20px;
-  width: 20px;
-  background-color: #9356DC;
-  color: #fff;
-  border-radius: 30px;
-}
-
-.phone {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  /* background-color: chartreuse;*/
-}
-
-.function-cards__card .phone {
-  color: #737373;
-}
-
-.choice {
-  width: 75%;
-  font-weight: bold;
-  /* background-color: cadetblue;*/
-}
-
 /************************* RESTAURANTS *****************************/
-.restaurants {
-  background-color: #f2f2f2;
-  padding: 40px 20px 64px 20px;
-}
-
-.restaurants__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media screen and (min-width: 768px) {
-  .restaurants__cards {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.card-text {
-  position: relative;
-}
-
-.card-text__icon,
-.card-text__icon2,
-.card-text__icon2_4,
-.card-text__icon_3 {
-  position: absolute;
-  width: 30px;
-}
-
-.card-text__icon, .card-text__icon2 {
-  right: 20px;
-}
-
-.card-text__icon {
-  z-index: 2;
-  opacity: 1;
-  background-color: #fff;
-  -webkit-transition: opacity 1000ms ease-out;
-  transition: opacity 1000ms ease-out;
-  /* &:hover .fa-heart::after{
-        animation: appear 1s linear forwards;
-    }*/
-}
-
-.card-text__icon:hover {
-  opacity: 0;
-  /*animation: disappear 520ms ease-in-out forwards;*/
-}
-
-.card-text__icon2 {
-  z-index: 1;
-  opacity: 1;
-}
-
-/***************************** EFFET COEUR MENU*****************************/
-.card-text__icon2_4,
-.card-text__icon_3 {
-  right: 50px;
-}
-
-.card-text__icon_3 {
-  z-index: 2;
-  background-color: #f2f2f2;
-  opacity: 1;
-  -webkit-transition: opacity 1000ms ease-out;
-  transition: opacity 1000ms ease-out;
-}
-
-.card-text__icon_3:hover {
-  opacity: 0;
-}
-
-.card-text__icon2_4 {
-  z-index: 1;
-  color: #9356DC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/*.card-text__icon2:hover .fa-heart::after{
-    content: '';
-    animation: appear 1s linear forwards;
-    
-
-}*/
-.far {
-  font-size: 28px;
-  color: #000;
-}
-
-/* animation: disappear 520ms ease-in-out forwards;
-        }*/
-/* &:hover .fa-heart::after{
-        animation: appear 1s linear forwards;
-    }*/
-/*.fa-heart:hover {
-    animation: appear 1s linear forwards;
-}*/
-.card-text__icon2 .fa-heart {
-  color: #9356DC;
-  display: block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(#9356DC, #FF79DA);
-  font-size: 28px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
-}
-
-@-webkit-keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 /*@keyframes appear {
     0% {opacity: 1; z-index: 1;}
     100%{opacity: 1; z-index: 3;visibility: visible;}
 }*/
 /***************************** FIN EFFET COEUR *************************************/
 /***************************** CARTES RESTAURANTS DEBUT *************************************/
-a {
-  color: #000;
-}
-
 /**************************** CARTES MENU DEBUT *********************************/
 /*********************************** FOOTER ***********************************/
 /****************************** COMPOSANTS ******************************/
 /****************************** MENUS ******************************/
 /****************************** LOADER SPINNER ******************************/
 /****************************** MEDIA QUERIES ******************************/
+/*@mixin tablette{
+    @media screen and (min-width: map-get($breakpoints, tablette)){
+        @content;
+    }
+}*/
 /*# sourceMappingURL=styles.css.map */

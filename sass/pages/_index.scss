@@ -1,3 +1,183 @@
+#function-section {
+    padding: 40px 20px 64px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+   
+    @media screen and (min-width: 1637px){
+        padding: 64px 20px;
+        margin-bottom: 0%;
+    }
+}
+.function-cards {
+    min-width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+   /* background-color: blue;*/
+   
+    @media screen and (min-width: 1634px) {
+        min-width: 89%;
+        max-width: 89%;
+        align-items: center;
+    }
+}
+
+.function-cards__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $grey;
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 25px;
+    min-width: 300px;
+    max-width: 422px;
+    box-shadow: 0 4px 8px 4px darken($grey, 5%);
+    &:hover {
+        background-color: lighten($color-primary, 35%);
+        &:hover .phone{
+            color: $color-primary;
+        }        
+    }
+    @media screen and (min-width: 940px) {
+        max-width: 31%;
+        min-width: 31%;
+    }
+    @media screen and (min-width: 1346px) {
+        margin-top: 0;
+    }
+} 
+
+.number-icon {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    /*background-color: blue;*/
+    flex: 1;
+    margin-left: -10px;
+    border-radius: 20px 0 0 20px;
+}
+.number {
+    height: 20px;
+    width: 20px;
+    background-color: $color-primary;
+    color: $white;
+    border-radius: 30px;
+}
+
+.phone {
+    flex: 1;
+    width: 100%;
+   /* background-color: chartreuse;*/
+}
+.function-cards__card .phone  {
+    color: darken($grey, 50%);
+}
+
+.choice {
+    width: 75%;
+    font-weight: bold;
+   /* background-color: cadetblue;*/
+}
+
+
+.restaurants {
+    background-color: $grey;
+    padding: 40px 20px 64px 20px;
+}
+.restaurants__cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.card-text {
+    position: relative;
+}
+.card-text__icon,
+.card-text__icon2,
+.card-text__icon2_4,
+.card-text__icon_3{ position: absolute; width: 30px;}
+
+.card-text__icon, .card-text__icon2 {right: 20px;}
+.card-text__icon {
+    z-index: 2;
+    opacity: 1;
+    background-color: $white;
+    transition: opacity 1000ms ease-out;
+    &:hover {
+        opacity: 0;
+        /*animation: disappear 520ms ease-in-out forwards;*/
+        }
+   /* &:hover .fa-heart::after{
+        animation: appear 1s linear forwards;
+    }*/
+}
+.card-text__icon2{
+    z-index: 1;
+    opacity: 1;
+}
+.card-text__icon2 .fa-heart {
+    color: $color-primary;
+    display: block;
+    background: linear-gradient($color-primary, $color-secondary);
+    font-size: map-get($font-size, title1 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+}
+@keyframes disappear {
+    0% {opacity: 1;}
+    100%{opacity: 0;}
+}
+/***************************** EFFET COEUR MENU*****************************/
+.card-text__icon2_4,
+.card-text__icon_3{
+    right: 50px;
+}
+.card-text__icon_3 {
+    z-index: 2;
+    background-color: $grey;    
+        opacity: 1;
+        transition: opacity 1000ms ease-out;
+        &:hover {
+            opacity: 0;
+            }
+}
+.card-text__icon2_4{
+    z-index: 1;
+    color: $color-primary;
+    background: linear-gradient($color-primary, $color-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*.card-text__icon2:hover .fa-heart::after{
+    content: '';
+    animation: appear 1s linear forwards;
+    
+
+}*/
+.far {font-size: map-get($font-size, title1 );
+    color: $black; 
+}
+ /* animation: disappear 520ms ease-in-out forwards;
+        }*/
+   /* &:hover .fa-heart::after{
+        animation: appear 1s linear forwards;
+    }*//*.fa-heart:hover {
+    animation: appear 1s linear forwards;
+}*/
+
+/****************** CARTES RESTAURANT **********************/
+a {
+    color: $black;
+}
 .card {
     height: 290px;
     min-width: 100%;
@@ -53,8 +233,26 @@ span {
     padding: 18px;
     background-color: $white;
     
-    &__text {
+    
+}
+.card-text__text {
         
-        flex-direction: column;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 462px){
+    #function-section{
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    min-width: 100%;
+    align-items: center;
+    .function-cards{
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;}
     }
+    
 }

@@ -130,7 +130,7 @@
 .card-text-mini__price {
     font-weight: bold;
     white-space: nowrap;
-    display: inline-block;
+    /*display: inline-block;*/
     right: 20px;
     bottom: 20px;
     transition: transform .5s ease-in-out;   
@@ -185,7 +185,7 @@
 .card-text-mini:hover .check{
     transform: translate(-80px);
     .check__icon{
-        animation: turn .5s linear forwards;
+        animation: turn .5s linear;
     }
 }
 .card-text-mini:hover .card-text-mini__price{
