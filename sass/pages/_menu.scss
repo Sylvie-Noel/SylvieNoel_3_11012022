@@ -11,6 +11,84 @@
     flex: 1;
 }
 
+.omf-banner {
+    position: relative;
+     background-color: $grey;
+ }
+ .omf-banner__image img {
+     object-fit: cover;
+     height:300px ;
+     width: 100%;
+     overflow: hidden;
+ }
+ .menu {
+     background-color: $grey;
+     margin: -61px 0 0 0;
+     position: absolute;
+     display: flex;
+     min-width: 100%;
+     max-width: 100%;
+     border-radius: 45px 45px 0 0;
+     padding: 15px 35px 0 20px;
+ }
+ .menu_h1 {
+     margin-bottom: 0;
+     font-size: map-get($font-size , title1);
+ }
+ .menu i {
+     font-size: map-get($font-size, title1 );
+     font-style: normal;
+ }
+ .global-padding-menu {
+     padding: 20px 17px 0 ;
+     @media screen and (min-width: 820px){
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+     
+ }
+ .meal h2{
+     border-bottom: solid $color-tertiary 3px;
+     width: 45px;
+     font-weight: lighter;
+     font-size: map-get($font-size, title2 );
+ }
+  .meal {
+     display: flex;
+     flex-direction: column;
+     min-width: 100%;
+     @media screen and (min-width: 820px) {
+         min-width: 48%;
+         max-width: 48%;
+         margin-bottom: 30px;
+     }
+     @media screen and (min-width: 1200px) {
+         min-width: 32%;
+         max-width: 32%;
+     }
+     &__cards {
+         max-width: 100%;
+     }
+ }
+ .flex-between {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     
+ }
+ .card-text-mini {
+     border-radius: 20px;
+     height: 85px;
+     margin-top: 20px;
+     box-shadow: 0 4px 4px 0 darken($grey, 10%);
+     &__price {
+         display: flex;
+         align-items: flex-end;
+     }
+ }
+
 .card-text-mini{
     animation: 500ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
     animation-delay: 50ms;
@@ -81,7 +159,7 @@
         background-color: $color-tertiary;
         height: 85px;
         width: 80px;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 20p 20p 0;
         margin-left: 20px;
         position: absolute;
         top: 0;
@@ -128,14 +206,12 @@
 .card-text__icon {
     display: flex;
 }
-span {
-    position: absolute;
-    height: 32px;
-    width: 90px;
-    right: 20px;
-    top: 20px;
-    color: darken($color-tertiary,40%);
-    background-color: $color-tertiary;
-    font-weight: bold;
-    border-radius: 2px;
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    @media screen and (min-width:820px )and (max-width:1199px) {
+        min-width: 48%;
+    }
 }

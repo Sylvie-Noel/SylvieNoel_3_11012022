@@ -242,50 +242,7 @@ p{
 a {
     color: $black;
 }
-.card {
-    height: 290px;
-    min-width: 100%;
-    max-width: 100%;
-    position: relative;
-    background-color: $white;
-    border-radius: 20px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px 0 darken($grey, 10%);
-    @media screen and (min-width: 768px) {
-        min-width: 48%;
-        max-width: 48%;
-    }
-    @media screen and (min-width: 1200px) {
-        min-width: 32%;
-        max-width: 32%;
-    }
-    @media screen and (min-width: 1346px) {
-        min-width: 24%;
-        max-width: 24%;
-    }
-}
-.card__image img {
-    object-fit: cover;
-    height:190px ;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 20px 20px 0 0;
-    &__menu img{
-        border-radius: 0%;
-    }
-}
 
-.card-text, .card-text-mini {
-    display: flex;
-    justify-content: space-between;
-    padding: 18px;
-    background-color: $white;
-    border-radius: 0 0 20px 20px;
-    &__text {
-        
-        flex-direction: column;
-    }
-}
 /**************************** CARTES MENU DEBUT *********************************/
 
 
@@ -295,94 +252,11 @@ a {
 
 /****************************** COMPOSANTS ******************************/
 
-.btn-container {
-    display: flex;
-    justify-content: center;
-    min-width: 100%;
-    @media screen and (min-width:820px )and (max-width:1199px) {
-        min-width: 48%;
-    }
-}
+
 
 /****************************** MENUS ******************************/
 
-.omf-banner {
-   position: relative;
-    background-color: $grey;
-}
-.omf-banner__image img {
-    object-fit: cover;
-    height:300px ;
-    width: 100%;
-    overflow: hidden;
-}
-.menu {
-    background-color: $grey;
-    margin: -61px 0 0 0;
-    position: absolute;
-    display: flex;
-    min-width: 100%;
-    max-width: 100%;
-    border-radius: 45px 45px 0 0;
-    padding: 15px 35px 0 20px;
-}
-.menu_h1 {
-    margin-bottom: 0;
-    font-size: map-get($font-size , title1);
-}
-.menu i {
-    font-size: map-get($font-size, title1 );
-    font-style: normal;
-}
-.global-padding-menu {
-    padding: 20px 17px 0 ;
-    @media screen and (min-width: 820px){
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-}
-.meal h2{
-    border-bottom: solid $color-tertiary 3px;
-    width: 45px;
-    font-weight: lighter;
-    font-size: map-get($font-size, title2 );
-}
- .meal {
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-    @media screen and (min-width: 820px) {
-        min-width: 48%;
-        max-width: 48%;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-        min-width: 32%;
-        max-width: 32%;
-    }
-    &__cards {
-        max-width: 100%;
-    }
-}
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-}
-.card-text-mini {
-    border-radius: 20px;
-    height: 85px;
-    margin-top: 20px;
-    box-shadow: 0 4px 4px 0 darken($grey, 10%);
-    &__price {
-        display: flex;
-        align-items: flex-end;
-    }
-}
+
 /****************************** LOADER SPINNER ******************************/
 
 

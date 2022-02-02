@@ -1,0 +1,60 @@
+.card {
+    height: 290px;
+    min-width: 100%;
+    max-width: 100%;
+    position: relative;
+    background-color: $white;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 darken($grey, 10%);
+    @media screen and (min-width: 768px) {
+        min-width: 48%;
+        max-width: 48%;
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 32%;
+        max-width: 32%;
+    }
+    @media screen and (min-width: 1346px) {
+        min-width: 24%;
+        max-width: 24%;
+    }
+}
+.card__image img {
+    object-fit: cover;
+    height:190px ;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    &__menu img{
+        border-radius: 0%;
+    }
+}
+span {
+    position: absolute;
+    height: 32px;
+    width: 90px;
+    right: 20px;
+    top: 20px;
+    color: darken($color-tertiary,40%);
+    background-color: $color-tertiary;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.card-text{border-radius: 0 0 20px 20px;
+    &-mini {
+        border-radius: 20px;
+    }
+}
+.card-text, .card-text-mini {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    background-color: $white;
+    
+    &__text {
+        
+        flex-direction: column;
+    }
+}
