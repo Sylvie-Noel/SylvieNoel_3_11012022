@@ -4,9 +4,10 @@
 @import "./sass/base/base";
 
 @import "./sass/layout/header";
+@import "./sass/layout/footer";
 
 @import "./sass/components/buttons";
-
+@import "./sass/components/loader";
 @import "./sass/pages/menu";
 .flex-center
 {
@@ -156,10 +157,12 @@ p{
 .card-text {
     position: relative;
 }
-.card-text__icon, .card-text__icon2 {
-    position: absolute;
-    right: 20px;
-}
+.card-text__icon,
+.card-text__icon2,
+.card-text__icon2_4,
+.card-text__icon_3{ position: absolute; width: 30px;}
+
+.card-text__icon, .card-text__icon2 {right: 20px;}
 .card-text__icon {
     z-index: 2;
     opacity: 1;
@@ -178,11 +181,13 @@ p{
     opacity: 1;
 }
 /***************************** EFFET COEUR MENU*****************************/
+.card-text__icon2_4,
+.card-text__icon_3{
+    right: 50px;
+}
 .card-text__icon_3 {
-    position: absolute;
     z-index: 2;
-    background-color: $grey;
-        right: 50px;
+    background-color: $grey;    
         opacity: 1;
         transition: opacity 1000ms ease-out;
         &:hover {
@@ -190,8 +195,6 @@ p{
             }
 }
 .card-text__icon2_4{
-    position: absolute;
-    right: 50px;
     z-index: 1;
     color: $color-primary;
     background: linear-gradient($color-primary, $color-secondary);
@@ -234,7 +237,7 @@ p{
     100%{opacity: 1; z-index: 3;visibility: visible;}
 }*/
 /***************************** FIN EFFET COEUR *************************************/
-
+/***************************** CARTES RESTAURANTS DEBUT *************************************/
 a {
     color: $black;
 }
@@ -282,7 +285,7 @@ a {
         flex-direction: column;
     }
 }
-
+/**************************** CARTES MENU DEBUT *********************************/
 .card-text-mini{
     animation: 500ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
     animation-delay: 50ms;
@@ -413,33 +416,7 @@ span {
 }
 
 /*********************************** FOOTER ***********************************/
-footer
-{
-    background-color: lighten($black, 20%) ;
-    color: $white;
-    padding: 20px;
-}
-footer p {
-    display: inline-block;
-    margin-bottom: 0;
-}
-footer i {
-    margin-right: 15px;
-}
-.fa-hands-helping {
-    font-size: 13px;
-    margin-right: 13px;
-}
-a {
-    text-decoration: none;
-    display: contents;
-}
-.color-white {
-    color: $white;
-}
-address {
-    font-style: normal;
-}
+
 
 
 /****************************** COMPOSANTS ******************************/
@@ -533,75 +510,7 @@ address {
     }
 }
 /****************************** LOADER SPINNER ******************************/
-.section-spinner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0px;
-    
-    height: 100vh;
-	width: 100%;
-    line-height: 500px;
-	background-color: $white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    
-    animation: hide 3s;
-    opacity: 0.8;
-    z-index: -1;
-    
-    /*animation: display 1s timing-function 1s 1 direction fill-mode;*/
-}
-.loader {
-    position: relative;
-    top: 0;
-    right: 0px;
-    width: 100px;
-    height: 100px;
-    background-color: $white;
-}
-.loader-circles{
-    border-radius: 100px; /*Border radius à la taille de l'élément permet d'obternir un cercle*/
-    border: 4px solid transparent;/*La dernière valeur pour opacité*/
-    border-top-color: $color-primary;
-    animation: spin 2.4s linear forwards;
-    animation-iteration-count: 1;
-}
-.loader-circles:after,
-.loader-circles:before{
-    content: '';
-    position: absolute;
-    border-radius: 50px;
-    border: 4px solid transparent;
-}
-.loader-circles:after{
-    top: 5px; /*remplacer les valeurs négatives par des positives a réduit la taille du cercle*/
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    border-top-color: $color-secondary;  
-    animation: spin 2.3s linear forwards;
-    animation-iteration-count: 1;
-}
-.loader-circles:before{
-    top: 14px; 
-    left: 14px;
-    bottom: 14px;
-    right: 14px;
-    border-top-color: $color-tertiary;
-    animation: spin 1.2s linear forwards;
-    animation-iteration-count: 2;
-}
 
-@keyframes spin{
-    0%{ transform: rotate(0deg);visibility: visible;z-index: 95;}/*à 0% de l'animation la position est à 0degré, elle ne tourne pas*/
-    100%{ transform: rotate(360deg);visibility: hidden;z-index: -1;}/*à 100% de l'animation la position est à 360degrés*/
-}
-@keyframes hide{
-    0%{ display: flex;z-index: 50;visibility: visible;}
-    100%{ display: none;z-index: -1;visibility: hidden;}
-}
 
 /****************************** MEDIA QUERIES ******************************/
 @mixin tablette{
