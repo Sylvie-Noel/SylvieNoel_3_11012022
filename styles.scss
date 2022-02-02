@@ -1,22 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
-h4, .menu_h1{ /*Seulement pour les menus*/
-    font-family: 'Shrikhand', cursive;
-}
-/*TYPOGRAPHY POUR L'INDEX*/
-p, .paris__text, .btn__text, h1, h2, h3, .number, span, a, .card-text-mini__price {
-    font-family: 'Roboto', sans-serif;
-   
-    /*text-align: center;*/
-}
-*
-{
-    box-sizing: border-box;
-}
-html,body {
-    margin: 0;
-    padding: 0;
-}
-body{position: relative; z-index: 0;background-color: transparent;}
+@import "./sass/utils/variables";
+
+@import "./sass/base/typography";
+@import "./sass/base/base";
+
+@import "./sass/layout/header";
+@import "./sass/layout/footer";
+
+@import "./sass/components/buttons";
+@import "./sass/components/loader";
+
+@import "./sass/pages/index";
+@import "./sass/pages/menu";
 .flex-center
 {
     display: flex;
@@ -35,24 +29,18 @@ p{
 }
 
 
-/****************************** VARIABLES*****************************/
-/*COLORS*/
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$white: #fff;
-$black: #000;
-$grey: #f2f2f2;
+/* VARIABLES dans le dossier utils/variable*/
 
-/*FONT-SIZE*/
-$font-size:(title1: 28px, title2: 19px, title3: 17px);
-
-/*BREAKPOINTS*/
-$breakpoints:('tablette': 462px);
 
 
 /****************************** FONCTIONS ******************************/
 
+/************************* RESTAURANTS **************************/
+
+/************* MEDIA SCREEN FONCTION **********************/
+
+
+/************* MEDIA SCREEN FONCTION FIN **********************/
 
 
 
@@ -61,621 +49,44 @@ $breakpoints:('tablette': 462px);
 
 
 
+/****************************** HEADER ******************************/
 
-/****************************** SELECTEURS ******************************/
-header {
-    height: 70px;
-    position:relative;
-}
-.arrow
-{
-   display: flex;
-   margin-left: 30px;
-   flex: .15;
-   font-size: map-get($font-size, title2);
-}
-.empty {
-    flex: 1;
-}
-.logo {
-    position: absolute;
-    display: flex;
-    flex: .95;
-}
-.logo img
-{
-    width: 180px;
-    height: 30px;
-}
-.paris {
-    box-shadow: inset 0 5px 4px -3px darken($grey, 20%);
-    background-color: darken($grey, 4%);
-}
-.paris__text {
-    height: 50px;
-    margin-left: 15px;
-}
-.titleh1-btn-container {
-    background-color: $grey;
-    text-align: center;
-}
-.titleh1 {
-    flex-direction: column;
-}
- 
-.function-section {
-    padding: 40px 20px 64px 20px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 64px;
-    @media screen and (min-width: 462px){
-        flex-wrap: wrap;
-        flex-direction: row;
-        min-width: 100%;
-        align-items: center;
-    }
-    @media screen and (min-width: 1637px){
-        padding: 64px 20px;
-        margin-bottom: 0%;
-    }
-}
-.function-cards {
-    min-width: 100%;
-    max-width: 100%;
-   /* background-color: blue;*/
-    @media screen and (min-width: 462px){
-        
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 20px;
-    }
-    @media screen and (min-width: 1634px) {
-        min-width: 89%;
-        max-width: 89%;
-        align-items: center;
-    }
-}
 
-.function-cards__card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: $grey;
-    height: 80px;
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 25px;
-    min-width: 300px;
-    max-width: 422px;
-    box-shadow: 0 4px 8px 4px darken($grey, 5%);
-    &:hover {
-        background-color: lighten($color-primary, 35%);
-        &:hover .phone{
-            color: $color-primary;
-        }        
-    }
-    @media screen and (min-width: 940px) {
-        max-width: 31%;
-        min-width: 31%;
-    }
-    @media screen and (min-width: 1346px) {
-        margin-top: 0;
-    }
-} 
 
-.number-icon {
-    width: 25%;
-    display: flex;
-    justify-content: flex-start;
-    /*background-color: blue;*/
-    flex: 1;
-    margin-left: -10px;
-    border-radius: 20px 0 0 20px;
-}
-.number {
-    height: 20px;
-    width: 20px;
-    background-color: $color-primary;
-    color: $white;
-    border-radius: 30px;
-}
+/**************************** BANNER INDEX *****************************/
 
-.phone {
-    flex: 1;
-    width: 100%;
-   /* background-color: chartreuse;*/
-}
-.function-cards__card .phone  {
-    color: darken($grey, 50%);
-}
+ /************************** FONCTIONNEMENT ****************************/
 
-.choice {
-    width: 75%;
-    font-weight: bold;
-   /* background-color: cadetblue;*/
-}
-.restaurants {
-    background-color: $grey;
-    padding: 40px 20px 64px 20px;
-}
-.restaurants__cards{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-.card-text {
-    position: relative;
-}
-.card-text__icon, .card-text__icon2 {
-    position: absolute;
-    right: 20px;
-}
-.card-text__icon {
-    z-index: 2;
-    opacity: 1;
-    background-color: $white;
-    transition: opacity 1000ms ease-out;
-    &:hover {
-        opacity: 0;
-        /*animation: disappear 520ms ease-in-out forwards;*/
-        }
-   /* &:hover .fa-heart::after{
-        animation: appear 1s linear forwards;
-    }*/
-}
-.card-text__icon2{
-    z-index: 1;
-    opacity: 1;
-}
-/***************************** EFFET COEUR MENU*****************************/
-.card-text__icon_3 {
-    position: absolute;
-    z-index: 2;
-    background-color: $grey;
-        right: 50px;
-        opacity: 1;
-        transition: opacity 1000ms ease-out;
-        &:hover {
-            opacity: 0;
-            }
-}
-.card-text__icon2_4{
-    position: absolute;
-    right: 50px;
-    z-index: 1;
-    color: $color-primary;
-    background: linear-gradient($color-primary, $color-secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-/*.card-text__icon2:hover .fa-heart::after{
-    content: '';
-    animation: appear 1s linear forwards;
-    
+/************************* RESTAURANTS *****************************/
 
-}*/
-.far {font-size: map-get($font-size, title1 );
-    color: $black; 
-}
- /* animation: disappear 520ms ease-in-out forwards;
-        }*/
-   /* &:hover .fa-heart::after{
-        animation: appear 1s linear forwards;
-    }*//*.fa-heart:hover {
-    animation: appear 1s linear forwards;
-}*/
-.card-text__icon2 .fa-heart {
-    color: $color-primary;
-    display: block;
-    background: linear-gradient($color-primary, $color-secondary);
-    font-size: map-get($font-size, title1 );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
-}
-@keyframes disappear {
-    0% {opacity: 1;}
-    100%{opacity: 0;}
-}
 /*@keyframes appear {
     0% {opacity: 1; z-index: 1;}
     100%{opacity: 1; z-index: 3;visibility: visible;}
 }*/
-
-a {
-    color: $black;
-}
-.card {
-    height: 290px;
-    min-width: 100%;
-    max-width: 100%;
-    position: relative;
-    background-color: $white;
-    border-radius: 20px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px 0 darken($grey, 10%);
-    @media screen and (min-width: 768px) {
-        min-width: 48%;
-        max-width: 48%;
-    }
-    @media screen and (min-width: 1200px) {
-        min-width: 32%;
-        max-width: 32%;
-    }
-    @media screen and (min-width: 1346px) {
-        min-width: 24%;
-        max-width: 24%;
-    }
-}
-.card__image img {
-    object-fit: cover;
-    height:190px ;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 20px 20px 0 0;
-    &__menu img{
-        border-radius: 0%;
-    }
-}
-
-.card-text, .card-text-mini {
-    display: flex;
-    justify-content: space-between;
-    padding: 18px;
-    background-color: $white;
-    border-radius: 0 0 20px 20px;
-    &__text {
-        
-        flex-direction: column;
-    }
-}
-
-.card-text-mini{
-    animation: 500ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
-    animation-delay: 50ms;
-    & + .opacity-delay { 
-        animation: 700ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
-        animation-delay: 50ms;
-       &-two {
-        animation: 900ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
-        animation-delay: 50ms;
-        }
-    }
-    
-}
-/*.meal-cards {
-    
-    /*animation: 200ms cubic-bezier(0.55, 0.06, 0.68, 0.19) 0ms 1 normal none running opacityshift;*/
-    /*animation: 500ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
-}
-
-.dish-cards {
-    animation: 750ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
-}
-.dessert-cards {
-    animation: 1000ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
-}*/
-
-@keyframes opacityshift {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    
-}
-.card-text-mini:hover, .btn, .function-cards__card {
-    cursor: pointer;
-}
-.card-text-mini__price {
-    font-weight: bold;
-    white-space: nowrap;
-    display: inline-block;
-    right: 20px;
-    bottom: 20px;
-    transition: transform .5s ease-in-out;   
-}
-.card-text__text{
-    flex: 1;
-    min-width: 0;
-    white-space: nowrap;
-    > div {
-        display: inline-block;
-        background-color: greenyellow;
-    }
-    
-    p, h3 { 
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-}
-.card-text-mini {
-    overflow: hidden;
-   .check {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-tertiary;
-        height: 85px;
-        width: 80px;
-        border-radius: 0 20px 20px 0;
-        margin-left: 20px;
-        position: absolute;
-        top: 0;
-        right: -80px;
-        transition: transform .5s ease-in-out;
-        &:hover {
-            transform: translate(-80px);
-            
-        }
-        &__icon{
-        background: $white;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        }
-    }
-}
-.ghost{
-    width: 0px;
-    height: 50px;
-    transition-duration: .5s;
-  }   
-.card-text-mini:hover .check{
-    transform: translate(-80px);
-    .check__icon{
-        animation: turn .5s linear forwards;
-    }
-}
-.card-text-mini:hover .card-text-mini__price{
-    transform: translate(-80px);
-}
-.card-text-mini:hover {
-    .ghost{width: 80px;}
-}
+/***************************** FIN EFFET COEUR *************************************/
+/***************************** CARTES RESTAURANTS DEBUT *************************************/
 
 
-@keyframes turn {
-    0% { transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-}
-.card-text__text h3 {
-    margin: 0;
-}
-.card-text__icon {
-    display: flex;
-}
-span {
-    position: absolute;
-    height: 32px;
-    width: 90px;
-    right: 20px;
-    top: 20px;
-    color: darken($color-tertiary,40%);
-    background-color: $color-tertiary;
-    font-weight: bold;
-    border-radius: 2px;
-}
-footer
-{
-    background-color: lighten($black, 20%) ;
-    color: $white;
-    padding: 20px;
-}
-footer p {
-    display: inline-block;
-    margin-bottom: 0;
-}
-footer i {
-    margin-right: 15px;
-}
-.fa-hands-helping {
-    font-size: 13px;
-    margin-right: 13px;
-}
-a {
-    text-decoration: none;
-    display: contents;
-}
-.color-white {
-    color: $white;
-}
-address {
-    font-style: normal;
-}
+/**************************** CARTES MENU DEBUT *********************************/
+
+
+/*********************************** FOOTER ***********************************/
+
+
+
 /****************************** COMPOSANTS ******************************/
-.btn-container {
-    display: flex;
-    justify-content: center;
-    min-width: 100%;
-    @media screen and (min-width:820px )and (max-width:1199px) {
-        min-width: 48%;
-    }
-}
-.btn {
-    background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary);
-    height: 50px;
-    width: 220px;
-    margin: 20px 0 50px 0;
-    color: $white;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 4px darken($grey, 10%);
-    &:hover {
-        opacity: 0.8;
-        box-shadow: 0 8px 16px 8px darken($grey , 20%);
-    }
-    &__text{
-        display: inline-block;
-    }   
-    &--small {
-        width: 180px;
-        margin: 42px 0 56px 0;
-    }
-}
+
+
+
 /****************************** MENUS ******************************/
 
-.omf-banner {
-   position: relative;
-    background-color: $grey;
-}
-.omf-banner__image img {
-    object-fit: cover;
-    height:300px ;
-    width: 100%;
-    overflow: hidden;
-}
-.menu {
-    background-color: $grey;
-    margin: -61px 0 0 0;
-    position: absolute;
-    display: flex;
-    min-width: 100%;
-    max-width: 100%;
-    border-radius: 45px 45px 0 0;
-    padding: 15px 35px 0 20px;
-}
-.menu_h1 {
-    margin-bottom: 0;
-    font-size: map-get($font-size , title1);
-}
-.menu i {
-    font-size: map-get($font-size, title1 );
-    font-style: normal;
-}
-.global-padding-menu {
-    padding: 20px 17px 0 ;
-    @media screen and (min-width: 820px){
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-}
-.meal h2{
-    border-bottom: solid $color-tertiary 3px;
-    width: 45px;
-    font-weight: lighter;
-    font-size: map-get($font-size, title2 );
-}
- .meal {
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-    @media screen and (min-width: 820px) {
-        min-width: 48%;
-        max-width: 48%;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-        min-width: 32%;
-        max-width: 32%;
-    }
-    &__cards {
-        max-width: 100%;
-    }
-}
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-}
-.card-text-mini {
-    border-radius: 20px;
-    height: 85px;
-    margin-top: 20px;
-    box-shadow: 0 4px 4px 0 darken($grey, 10%);
-    &__price {
-        display: flex;
-        align-items: flex-end;
-    }
-}
-/****************************** LOADER SPINNER ******************************/
-.section-spinner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0px;
-    
-    height: 100vh;
-	width: 100%;
-    line-height: 500px;
-	background-color: $white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    
-    animation: hide 3s;
-    opacity: 0.8;
-    z-index: -1;
-    
-    /*animation: display 1s timing-function 1s 1 direction fill-mode;*/
-}
-.loader {
-    position: relative;
-    top: 0;
-    right: 0px;
-    width: 100px;
-    height: 100px;
-    background-color: $white;
-}
-.loader-circles{
-    border-radius: 100px; /*Border radius à la taille de l'élément permet d'obternir un cercle*/
-    border: 4px solid transparent;/*La dernière valeur pour opacité*/
-    border-top-color: $color-primary;
-    animation: spin 2.4s linear forwards;
-    animation-iteration-count: 1;
-}
-.loader-circles:after{
-    content: '';
-    position: absolute;
-    top: 5px; /*remplacer les valeurs négatives par des positives a réduit la taille du cercle*/
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    border-radius: 50px;
-    border: 4px solid transparent;
-    border-top-color: $color-secondary;
-    opacity: 1;
-    animation: spin 2.3s linear forwards;
-    animation-iteration-count: 1;
-}
-.loader-circles:before{
-    content: '';
-    position: absolute;
-    top: 14px; /*remplacer les valeurs négatives par des positives a réduit la taille du cercle*/
-    left: 14px;
-    bottom: 14px;
-    right: 14px;
-    border-radius: 50px;
-    border: 4px solid transparent;
-    border-top-color: $color-tertiary;
-    opacity: 1;
-    animation: spin 1.2s linear forwards;
-   animation-iteration-count: 2;
-}
 
-@keyframes spin{
-    0%{ transform: rotate(0deg);visibility: visible;z-index: 95;}/*à 0% de l'animation la position est à 0degré, elle ne tourne pas*/
-    100%{ transform: rotate(360deg);visibility: hidden;z-index: -1;}/*à 100% de l'animation la position est à 360degrés*/
-}
-@keyframes hide{
-    0%{ display: flex;z-index: 50;visibility: visible;}
-    100%{ display: none;z-index: -1;visibility: hidden;}
-}
+/****************************** LOADER SPINNER ******************************/
+
 
 /****************************** MEDIA QUERIES ******************************/
-@mixin tablette{
+/*@mixin tablette{
     @media screen and (min-width: map-get($breakpoints, tablette)){
         @content;
     }
-}
+}*/
