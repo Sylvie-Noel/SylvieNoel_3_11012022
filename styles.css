@@ -2,16 +2,27 @@
 /*COLORS*/
 /*FONT-SIZE*/
 /*BREAKPOINTS*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&family=Shrikhand&display=swap");
 h4, .menu_h1 {
   /*Seulement pour les menus*/
   font-family: 'Shrikhand', cursive;
 }
 
 /*TYPOGRAPHY POUR L'INDEX*/
-p, .paris__text, .btn__text, h1, h2, h3, .number, span, a, .card-text-mini__price {
+body {
   font-family: 'Roboto', sans-serif;
-  /*text-align: center;*/
+}
+
+p {
+  font-weight: 300;
+}
+
+footer p {
+  font-weight: normal;
+}
+
+.choice p {
+  font-weight: bold;
 }
 
 * {
