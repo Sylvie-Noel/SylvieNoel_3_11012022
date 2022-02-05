@@ -82,6 +82,14 @@ footer {
   color: #fff;
   padding: 20px;
 }
+@media screen and (min-width: 462px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 footer p {
   display: inline-block;
@@ -637,7 +645,7 @@ span {
   animation-delay: 50ms;
 }
 .card-text-mini + .opacity-delay-three {
-  animation: 3000ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
+  animation: 1400ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
   animation-delay: 50ms;
 }
 
@@ -734,7 +742,7 @@ span {
 }
 
 .card-text-mini:hover .ghost {
-  width: 80px;
+  width: 81px;
 }
 
 @keyframes turn {
@@ -742,7 +750,7 @@ span {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(350deg);
   }
 }
 .card-text__text h3 {

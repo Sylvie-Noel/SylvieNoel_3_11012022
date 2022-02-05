@@ -3,6 +3,12 @@ footer
     background-color: lighten($black, 20%) ;
     color: $white;
     padding: 20px;
+    @media screen and (min-width: 462px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 footer p {
     display: inline-block;
