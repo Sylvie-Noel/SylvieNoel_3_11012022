@@ -1,16 +1,16 @@
-@import "./sass/utils/variables";
+@import "./utils/variables";
 
-@import "./sass/base/typography";
-@import "./sass/base/base";
+@import "./base/typography";
+@import "./base/base";
 
-@import "./sass/layout/header";
-@import "./sass/layout/footer";
+@import "./layout/header";
+@import "./layout/footer";
 
-@import "./sass/components/buttons";
-@import "./sass/components/loader";
+@import "./components/buttons";
+@import "./components/loader";
 
-@import "./sass/pages/index";
-@import "./sass/pages/menu";
+@import "./pages/index";
+@import "./pages/menu";
 .flex-center
 {
     display: flex;
