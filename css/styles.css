@@ -237,6 +237,18 @@ address {
   flex-direction: column;
   margin-bottom: 64px;
 }
+@media screen and (min-width: 462px) {
+  #function-section {
+    min-width: 100%;
+    align-items: center;
+  }
+  #function-section, #function-section .function-cards {
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+  }
+}
 @media screen and (min-width: 1637px) {
   #function-section {
     padding: 64px 20px;
@@ -249,6 +261,11 @@ address {
   max-width: 100%;
   flex-direction: column;
   /* background-color: blue;*/
+}
+@media screen and (min-width: 462px) {
+  .function-cards {
+    column-gap: 20px;
+  }
 }
 @media screen and (min-width: 1634px) {
   .function-cards {
@@ -513,22 +530,6 @@ span {
   flex-direction: column;
 }
 
-@media screen and (min-width: 462px) {
-  #function-section {
-    flex-wrap: wrap;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    min-width: 100%;
-    align-items: center;
-  }
-  #function-section .function-cards {
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 20px;
-  }
-}
 /********************** HEADER MENU ************************/
 .arrow {
   display: flex;
