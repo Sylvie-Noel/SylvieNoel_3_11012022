@@ -1,0 +1,8 @@
+@mixin flex-wrap{
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
