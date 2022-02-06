@@ -111,81 +111,58 @@
 .card-text {
     position: relative;
 }
-.card-text__icon,
-.card-text__icon2,
-.card-text__icon2_4,
-.card-text__icon_3{ position: absolute; width: 30px;}
 
-.card-text__icon, .card-text__icon2 {right: 20px;}
-.card-text__icon {
+.card-text__icon,
+.card-text__icon_3 {
     z-index: 2;
     opacity: 1;
     background-color: $white;
-    transition: opacity 1000ms ease-out;
+    transition: opacity 800ms ease-out;
     &:hover {
         opacity: 0;
-        /*animation: disappear 520ms ease-in-out forwards;*/
-        }
-   /* &:hover .fa-heart::after{
-        animation: appear 1s linear forwards;
-    }*/
+    }
 }
-.card-text__icon2{
+.card-text__icon_3{
+    background-color: $grey;    
+}
+.card-text__icon2_4, .card-text__icon2 .fa-heart{
     z-index: 1;
-    opacity: 1;
-}
-.card-text__icon2 .fa-heart {
-    color: $color-primary;
-    display: block;
+    /*color: $color-primary;*/
     background: linear-gradient($color-primary, $color-secondary);
-    font-size: map-get($font-size, title1 );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 1;
+    font-size: map-get($font-size, title1 );
 }
-@keyframes disappear {
-    0% {opacity: 1;}
-    100%{opacity: 0;}
+
+.card-text__icon,
+.card-text__icon2,
+.card-text__icon2_4,
+.card-text__icon_3{ 
+    position: absolute; width: 30px;
+    display: flex;
 }
+
+.card-text__icon,
+.card-text__icon2 {right: 20px;}
+
+
+
 /***************************** EFFET COEUR MENU*****************************/
 .card-text__icon2_4,
 .card-text__icon_3{
     right: 50px;
 }
-.card-text__icon_3 {
-    z-index: 2;
-    background-color: $grey;    
-        opacity: 1;
-        transition: opacity 1000ms ease-out;
-        &:hover {
-            opacity: 0;
-            }
-}
-.card-text__icon2_4{
-    z-index: 1;
-    color: $color-primary;
-    background: linear-gradient($color-primary, $color-secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-/*.card-text__icon2:hover .fa-heart::after{
-    content: '';
-    animation: appear 1s linear forwards;
-    
 
-}*/
+@keyframes disappear {
+    0% {opacity: 1;}
+    100%{opacity: 0;}
+}
+
 .far {font-size: map-get($font-size, title1 );
     color: $black; 
 }
- /* animation: disappear 520ms ease-in-out forwards;
-        }*/
-   /* &:hover .fa-heart::after{
-        animation: appear 1s linear forwards;
-    }*//*.fa-heart:hover {
-    animation: appear 1s linear forwards;
-}*/
+ 
 
 /****************** CARTES RESTAURANT **********************/
 a {
