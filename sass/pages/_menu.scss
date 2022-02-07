@@ -33,12 +33,9 @@
  }
  .menu_h1 {
      margin-bottom: 0;
-     font-size: map-get($font-size , title1);
+     
  }
- .menu i {
-     font-size: map-get($font-size, title1 );
-     font-style: normal;
- }
+ 
  .global-padding-menu {
      padding: 20px 17px 0 ;
      @media screen and (min-width: 820px){

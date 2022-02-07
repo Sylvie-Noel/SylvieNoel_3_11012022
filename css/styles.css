@@ -25,6 +25,14 @@ footer p {
   font-weight: bold;
 }
 
+.far,
+.card-text__icon2_4,
+.card-text__icon2 .fa-heart,
+.menu_h1,
+.menu i {
+  font-size: 28px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -357,6 +365,7 @@ address {
   }
 }
 
+/***************************** EFFET COEUR MENU*****************************/
 .card-text {
   position: relative;
 }
@@ -384,7 +393,6 @@ address {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 28px;
 }
 
 .card-text__icon,
@@ -401,23 +409,9 @@ address {
   right: 20px;
 }
 
-/***************************** EFFET COEUR MENU*****************************/
 .card-text__icon2_4,
 .card-text__icon_3 {
   right: 50px;
-}
-
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-.far {
-  font-size: 28px;
-  color: #000;
 }
 
 /****************** CARTES RESTAURANT **********************/
@@ -532,12 +526,6 @@ span {
 
 .menu_h1 {
   margin-bottom: 0;
-  font-size: 28px;
-}
-
-.menu i {
-  font-size: 28px;
-  font-style: normal;
 }
 
 .global-padding-menu {
