@@ -166,7 +166,7 @@
         background-color: $color-tertiary;
         height: 85px;
         width: 80px;
-        border-radius: 0 20p 20p 0;
+        border-radius: 0 20px 20px 0;
         margin-left: 20px;
         position: absolute;
         top: 0;
@@ -211,9 +211,6 @@
 .card-text__text h3 {
     margin: 0;
 }
-/*.card-text__icon {
-    display: flex;
-}*/
 
 .btn-container {
     display: flex;
