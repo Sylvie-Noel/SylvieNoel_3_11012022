@@ -131,8 +131,8 @@
 }
 .card-text__icon2_4, .card-text__icon2 .fa-heart{
     z-index: 1;
-    /*color: $color-primary;*/
-    background: linear-gradient($color-primary, $color-secondary);
+    /*$gradient se strouve dans les variables*/
+    background: $gradient;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -1,5 +1,5 @@
 .btn {
-    background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary);
+    background-image: $gradient-top;
     height: 50px;
     width: 220px;
     margin: 20px 0 50px 0;
@@ -18,3 +18,4 @@
         margin: 42px 0 56px 0;
     }
 }
+/* background-image: radial-gradient(ellipse at 25% 20%, $color-secondary, $color-primary); */
