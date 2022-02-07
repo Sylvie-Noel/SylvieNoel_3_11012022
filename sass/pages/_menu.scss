@@ -134,10 +134,8 @@
 .card-text-mini__price {
     font-weight: bold;
     white-space: nowrap;
-    /*display: inline-block;*/
     right: 20px;
-    bottom: 20px;
-    transition: transform .5s ease-in-out;   
+    bottom: 20px;   
 }
 .card-text__text{
     flex: 1;
@@ -168,11 +166,7 @@
         position: absolute;
         top: 0;
         right: -80px;
-        transition: transform .5s ease-in-out;
-        &:hover {
-            transform: translate(-80px);
-            
-        }
+        
         &__icon{
         background: $white;
         -webkit-background-clip: text;
@@ -181,26 +175,23 @@
         }
     }
 }
- 
-.card-text-mini:hover .check{
-    transform: translate(-80px);
-    .check__icon{
-        animation: turn .5s linear;
-    }
-}
-.card-text-mini:hover .card-text-mini__price{
-    transform: translate(-80px);
-}
+.check, .card-text-mini__price{transition: transform .5s ease-in-out;}
+
 .ghost{
     width: 0px;
     height: 50px;
     transition-duration: .5s;
+    transition-timing-function: ease-in-out;
   }  
 .card-text-mini:hover {
+    .check, .card-text-mini__price{
+        transform: translate(-80px);
+    }
     .ghost{width: 81px;}
+    .check__icon{
+        animation: turn .5s linear;
+    }
 }
-
-
 @keyframes turn {
     0% { transform: rotate(0deg);}
     100%{transform: rotate(350deg);}
