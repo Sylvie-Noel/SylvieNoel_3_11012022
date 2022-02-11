@@ -5,6 +5,8 @@ $color-tertiary: #99E2D0;
 $white: #fff;
 $black: #000;
 $grey: #f2f2f2;
+$gradient: linear-gradient($color-primary, $color-secondary);
+$gradient-top: linear-gradient(-5deg, $color-primary , $color-secondary 95%);
 
 /*FONT-SIZE*/
 $font-size:(title1: 28px, title2: 19px, title3: 17px);

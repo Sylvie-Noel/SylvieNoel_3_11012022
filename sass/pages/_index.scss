@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 #function-section {
     padding: 40px 20px 64px 20px;
     display: flex;
@@ -108,6 +110,8 @@
         justify-content: space-between;
     }
 }
+
+/***************************** EFFET COEUR MENU*****************************/
 .card-text {
     position: relative;
 }
@@ -127,41 +131,33 @@
 }
 .card-text__icon2_4, .card-text__icon2 .fa-heart{
     z-index: 1;
-    /*color: $color-primary;*/
-    background: linear-gradient($color-primary, $color-secondary);
+    /*$gradient se strouve dans les variables*/
+    background: $gradient;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: map-get($font-size, title1 );
+    
 }
 
 .card-text__icon,
 .card-text__icon2,
 .card-text__icon2_4,
 .card-text__icon_3{ 
-    position: absolute; width: 30px;
+    position: absolute; 
+    width: 30px;
     display: flex;
 }
 
 .card-text__icon,
 .card-text__icon2 {right: 20px;}
 
-
-
-/***************************** EFFET COEUR MENU*****************************/
 .card-text__icon2_4,
 .card-text__icon_3{
     right: 50px;
+    bottom: 11px;
 }
 
-@keyframes disappear {
-    0% {opacity: 1;}
-    100%{opacity: 0;}
-}
 
-.far {font-size: map-get($font-size, title1 );
-    color: $black; 
-}
  
 
 /****************** CARTES RESTAURANT **********************/
