@@ -1,4 +1,4 @@
-@import "../utils/mixins";
+/*@import "../utils/mixins";*/
 
 #function-section {
     padding: 40px 20px 64px 20px;
@@ -26,7 +26,6 @@
     min-width: 100%;
     max-width: 100%;
     flex-direction: column;
-   /* background-color: blue;*/
    @media screen and (min-width: 462px){
     column-gap: 20px;
    }
@@ -68,7 +67,6 @@
     width: 25%;
     display: flex;
     justify-content: flex-start;
-    /*background-color: blue;*/
     flex: 1;
     margin-left: -10px;
     border-radius: 20px 0 0 20px;
@@ -84,7 +82,6 @@
 .phone {
     flex: 1;
     width: 100%;
-   /* background-color: chartreuse;*/
 }
 .function-cards__card .phone  {
     color: darken($grey, 50%);
@@ -93,7 +90,6 @@
 .choice {
     width: 75%;
     font-weight: bold;
-   /* background-color: cadetblue;*/
 }
 
 
@@ -218,8 +214,6 @@ span {
     justify-content: space-between;
     padding: 18px;
     background-color: $white;
-    
-    
 }
 .card-text__text {
         
