@@ -44,7 +44,6 @@
          flex-wrap: wrap;
          justify-content: space-between;
      }
-     
  }
  .meal h2{
      border-bottom: solid $color-tertiary 3px;
@@ -103,10 +102,7 @@
         animation-delay: 50ms;
         }  
     }
-    
 }
-
-
 
 @keyframes opacityshift {
     0% {
@@ -115,8 +111,8 @@
     100% {
         opacity: 1;
     }
-    
 }
+
 .card-text-mini:hover, .btn, .function-cards__card {
     cursor: pointer;
 }
@@ -132,9 +128,7 @@
     white-space: nowrap;
     > div {
         display: inline-block;
-        background-color: greenyellow;
-    }
-    
+    } 
     p, h3 { 
         overflow: hidden;
         text-overflow: ellipsis;
@@ -155,7 +149,6 @@
         position: absolute;
         top: 0;
         right: -80px;
-        
         &__icon{
         background: $white;
         -webkit-background-clip: text;
