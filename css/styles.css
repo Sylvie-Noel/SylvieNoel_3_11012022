@@ -3,6 +3,7 @@
 /*FONT-SIZE*/
 /*BREAKPOINTS*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&family=Shrikhand&display=swap");
+/*@import "../utils/variables";*/
 h4, .menu_h1 {
   /*Seulement pour les menus*/
   font-family: "Shrikhand", cursive;
@@ -31,6 +32,22 @@ footer p {
 .menu_h1,
 .menu i {
   font-size: 28px;
+}
+
+.titleh1 p {
+  font-size: 19px;
+}
+
+h4 {
+  font-size: 19px;
+  margin: 9px 0;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 17px;
 }
 
 * {
@@ -409,7 +426,7 @@ address {
 
 .card-text__icon2_4,
 .card-text__icon_3 {
-  right: 50px;
+  right: 31px;
   bottom: 11px;
 }
 
@@ -712,11 +729,6 @@ span {
   flex-direction: column;
   display: flex;
   justify-content: center;
-}
-
-p {
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */
