@@ -5,18 +5,16 @@ h4, .menu_h1{
 /*TYPOGRAPHY POUR L'INDEX*/
 body {font-family: 'Roboto', sans-serif;}
 p{font-weight: 300;}
-footer p{font-weight: normal;}
+footer p, h4{font-weight: normal;}
 .choice p{font-weight: bold;}
 .far,
 .card-text__icon2_4,
 .card-text__icon2 .fa-heart,
 .menu_h1,
 .menu i {font-size: map-get($font-size, title1 );}
-.titleh1 p{font-size: map-get($font-size , title2 );}
+.titleh1 p, h4{font-size: map-get($font-size , title2 );}
 h4{
-    font-size: map-get($font-size, title2 );
     margin: 9px 0;
-    font-weight: normal;
 }
 p{
     margin-top: 8px;
