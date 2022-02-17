@@ -3,9 +3,7 @@
 /*FONT-SIZE*/
 /*BREAKPOINTS*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&family=Shrikhand&display=swap");
-/*@import "../utils/variables";*/
 h4, .menu_h1 {
-  /*Seulement pour les menus*/
   font-family: "Shrikhand", cursive;
 }
 
@@ -430,7 +428,8 @@ address {
   bottom: 11px;
 }
 
-/****************** CARTES RESTAURANT **********************/
+/***************************** EFFET COEUR MENU FIN *****************************/
+/*************************** CARTES RESTAURANT DEBUT ***************************/
 a {
   color: #000;
 }
@@ -505,7 +504,8 @@ span {
   flex-direction: column;
 }
 
-/********************** HEADER MENU ************************/
+/*************************** CARTES RESTAURANT FIN ***************************/
+/********************** HEADER MENU DEBUT ************************/
 .arrow {
   display: flex;
   margin-left: 30px;
@@ -517,6 +517,8 @@ span {
   flex: 1;
 }
 
+/********************** HEADER MENU FIN ************************/
+/************************ BANNER DEBUT *************************/
 .omf-banner {
   position: relative;
   background-color: #f2f2f2;
@@ -544,6 +546,8 @@ span {
   margin-bottom: 0;
 }
 
+/************************ BANNER FIN *************************/
+/************************ MENU DEBUT *************************/
 .global-padding-menu {
   padding: 20px 17px 0;
 }
@@ -602,6 +606,8 @@ span {
   align-items: flex-end;
 }
 
+/**************************** MENU FIN *****************************/
+/************************ EFFET MENU DELAY DEBUT *************************/
 .card-text-mini {
   animation: 500ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
   animation-delay: 50ms;
@@ -627,6 +633,8 @@ span {
     opacity: 1;
   }
 }
+/************************ EFFET MENU DELAY FIN *************************/
+/************************ EFFET COCHE DEBUT *************************/
 .card-text-mini:hover, .btn, .function-cards__card {
   cursor: pointer;
 }
@@ -719,6 +727,7 @@ span {
   }
 }
 
+/************************ EFFET COCHE FIN *************************/
 .flex-center {
   display: flex;
   justify-content: center;

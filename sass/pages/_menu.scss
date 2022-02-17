@@ -1,5 +1,5 @@
 
-/********************** HEADER MENU ************************/
+/********************** HEADER MENU DEBUT ************************/
 .arrow
 {
    display: flex;
@@ -10,7 +10,8 @@
 .empty {
     flex: 1;
 }
-
+/********************** HEADER MENU FIN ************************/
+/************************ BANNER DEBUT *************************/
 .omf-banner {
     position: relative;
      background-color: $grey;
@@ -35,7 +36,8 @@
      margin-bottom: 0;
      
  }
- 
+ /************************ BANNER FIN *************************/
+ /************************ MENU DEBUT *************************/
  .global-padding-menu {
      padding: 20px 17px 0 ;
      @media screen and (min-width: 820px){
@@ -84,7 +86,8 @@
          align-items: flex-end;
      }
  }
-
+/**************************** MENU FIN *****************************/
+/************************ EFFET MENU DELAY DEBUT *************************/
 .card-text-mini{
     animation: 500ms cubic-bezier(0.87, 0.04, 0.98, -0.23) 0ms 1 normal none running opacityshift;
     animation-delay: 50ms;
@@ -112,6 +115,8 @@
         opacity: 1;
     }
 }
+/************************ EFFET MENU DELAY FIN *************************/
+/************************ EFFET COCHE DEBUT *************************/
 
 .card-text-mini:hover, .btn, .function-cards__card {
     cursor: pointer;
@@ -190,3 +195,4 @@
         min-width: 48%;
     }
 }
+/************************ EFFET COCHE FIN *************************/
